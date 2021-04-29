@@ -1,0 +1,16 @@
+{
+  "name": "comunica-test-knows",
+  "version": "1.0.0",
+  "description": "Comunica test using queries from the KNoWS site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js --log verbose"
+  },
+  "author": "Martin Vanbrabant",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "graphql-ld-comunica": "^1.2.1",
+    "winston": "^3.3.3"
+  }
+}
