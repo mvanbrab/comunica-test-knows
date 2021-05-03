@@ -1,11 +1,11 @@
-[32minfo[39m 2021-05-03T09:58:12.470Z : Starting app
-[32minfo[39m 2021-05-03T09:58:12.476Z : Memory usage before handling queries: 
-      rss 56.76 MB
+info: Starting app 1
+info: Memory usage before handling queries: 
+      rss 57.17 MB
       heapTotal 29.26 MB
-      heapUsed 19.57 MB
+      heapUsed 19.69 MB
       external 2.11 MB
       arrayBuffers 0.68 MB
-[36mverbose[39m 2021-05-03T09:58:12.477Z : Query: 
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -28,7 +28,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:12.478Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -60,7 +60,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:12.478Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -72,9 +72,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:12.478Z : Starting query 1/48
-[32minfo[39m 2021-05-03T09:58:17.186Z : Ending query 1/48 (duration: 4.707125271 s)
-[36mverbose[39m 2021-05-03T09:58:17.186Z : Query 1/48 result:
+info: Starting query 1/48
+info: Ending query 1/48 (duration: 4.704848892 s)
+verbose: Query 1/48 result:
 {
   "data": [
     {
@@ -111,13 +111,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:17.187Z : Memory usage after handling query 1/48: 
-      rss 169.65 MB
-      heapTotal 130.85 MB
-      heapUsed 110.92 MB
-      external 1.92 MB
-      arrayBuffers 0.48 MB
-[36mverbose[39m 2021-05-03T09:58:17.188Z : Query: 
+info: Memory usage after handling query 1/48: 
+      rss 169.48 MB
+      heapTotal 129.35 MB
+      heapUsed 111.19 MB
+      external 1.79 MB
+      arrayBuffers 0.36 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -140,7 +140,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:17.188Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -172,7 +172,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:17.188Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -184,9 +184,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:17.189Z : Starting query 2/48
-[32minfo[39m 2021-05-03T09:58:20.057Z : Ending query 2/48 (duration: 2.868256047 s)
-[36mverbose[39m 2021-05-03T09:58:20.058Z : Query 2/48 result:
+info: Starting query 2/48
+info: Ending query 2/48 (duration: 2.902638229 s)
+verbose: Query 2/48 result:
 {
   "data": [
     {
@@ -225,13 +225,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:20.061Z : Memory usage after handling query 2/48: 
-      rss 263.13 MB
-      heapTotal 219.6 MB
-      heapUsed 187.87 MB
-      external 2.39 MB
-      arrayBuffers 0.9 MB
-[36mverbose[39m 2021-05-03T09:58:20.061Z : Query: 
+info: Memory usage after handling query 2/48: 
+      rss 263.47 MB
+      heapTotal 218.85 MB
+      heapUsed 187.24 MB
+      external 2.23 MB
+      arrayBuffers 0.8 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -254,7 +254,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:20.061Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -286,7 +286,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:20.061Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -298,9 +298,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:20.061Z : Starting query 3/48
-[32minfo[39m 2021-05-03T09:58:22.814Z : Ending query 3/48 (duration: 2.752693455 s)
-[36mverbose[39m 2021-05-03T09:58:22.815Z : Query 3/48 result:
+info: Starting query 3/48
+info: Ending query 3/48 (duration: 3.45987458 s)
+verbose: Query 3/48 result:
 {
   "data": [
     {
@@ -360,13 +360,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:22.815Z : Memory usage after handling query 3/48: 
-      rss 222.89 MB
-      heapTotal 171.45 MB
-      heapUsed 149.81 MB
+info: Memory usage after handling query 3/48: 
+      rss 224.81 MB
+      heapTotal 173.7 MB
+      heapUsed 146.1 MB
       external 1.56 MB
       arrayBuffers 0.13 MB
-[36mverbose[39m 2021-05-03T09:58:22.816Z : Query: 
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -389,7 +389,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:22.816Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -421,7 +421,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:22.816Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -433,9 +433,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:22.816Z : Starting query 4/48
-[32minfo[39m 2021-05-03T09:58:24.942Z : Ending query 4/48 (duration: 2.125268749 s)
-[36mverbose[39m 2021-05-03T09:58:24.942Z : Query 4/48 result:
+info: Starting query 4/48
+info: Ending query 4/48 (duration: 2.256732842 s)
+verbose: Query 4/48 result:
 {
   "data": [
     {
@@ -488,13 +488,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:24.943Z : Memory usage after handling query 4/48: 
-      rss 308.3 MB
-      heapTotal 256.8 MB
-      heapUsed 228.05 MB
-      external 1.97 MB
-      arrayBuffers 0.54 MB
-[36mverbose[39m 2021-05-03T09:58:24.943Z : Query: 
+info: Memory usage after handling query 4/48: 
+      rss 304.85 MB
+      heapTotal 254.11 MB
+      heapUsed 234.59 MB
+      external 2 MB
+      arrayBuffers 0.57 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -517,7 +517,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:24.943Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -549,7 +549,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:24.943Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -561,9 +561,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:24.943Z : Starting query 5/48
-[32minfo[39m 2021-05-03T09:58:27.328Z : Ending query 5/48 (duration: 2.384382309 s)
-[36mverbose[39m 2021-05-03T09:58:27.328Z : Query 5/48 result:
+info: Starting query 5/48
+info: Ending query 5/48 (duration: 232.744297426 s)
+verbose: Query 5/48 result:
 {
   "data": [
     {
@@ -624,13 +624,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:27.329Z : Memory usage after handling query 5/48: 
-      rss 431.81 MB
-      heapTotal 380.14 MB
-      heapUsed 348.86 MB
-      external 2.39 MB
-      arrayBuffers 0.96 MB
-[36mverbose[39m 2021-05-03T09:58:27.329Z : Query: 
+info: Memory usage after handling query 5/48: 
+      rss 218.06 MB
+      heapTotal 167.45 MB
+      heapUsed 145.68 MB
+      external 1.58 MB
+      arrayBuffers 0.15 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -653,7 +653,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:27.330Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -685,7 +685,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:27.330Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -697,9 +697,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:27.330Z : Starting query 6/48
-[32minfo[39m 2021-05-03T09:58:29.922Z : Ending query 6/48 (duration: 2.591915484 s)
-[36mverbose[39m 2021-05-03T09:58:29.922Z : Query 6/48 result:
+info: Starting query 6/48
+info: Ending query 6/48 (duration: 3.687332228 s)
+verbose: Query 6/48 result:
 {
   "data": [
     {
@@ -760,13 +760,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:29.923Z : Memory usage after handling query 6/48: 
-      rss 222 MB
-      heapTotal 172.05 MB
-      heapUsed 152.39 MB
-      external 2.01 MB
-      arrayBuffers 0.57 MB
-[36mverbose[39m 2021-05-03T09:58:29.924Z : Query: 
+info: Memory usage after handling query 6/48: 
+      rss 343.69 MB
+      heapTotal 292.99 MB
+      heapUsed 262.04 MB
+      external 1.95 MB
+      arrayBuffers 0.52 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -789,7 +789,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:29.924Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -821,7 +821,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:29.924Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -833,9 +833,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:29.924Z : Starting query 7/48
-[32minfo[39m 2021-05-03T09:58:32.713Z : Ending query 7/48 (duration: 2.788923706 s)
-[36mverbose[39m 2021-05-03T09:58:32.714Z : Query 7/48 result:
+info: Starting query 7/48
+info: Ending query 7/48 (duration: 2.928269832 s)
+verbose: Query 7/48 result:
 {
   "data": [
     {
@@ -903,13 +903,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:32.716Z : Memory usage after handling query 7/48: 
-      rss 288.96 MB
-      heapTotal 238.09 MB
-      heapUsed 147.8 MB
-      external 1.64 MB
-      arrayBuffers 0.21 MB
-[36mverbose[39m 2021-05-03T09:58:32.716Z : Query: 
+info: Memory usage after handling query 7/48: 
+      rss 469.71 MB
+      heapTotal 417.99 MB
+      heapUsed 395.08 MB
+      external 2.48 MB
+      arrayBuffers 1.04 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -932,7 +932,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:32.718Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -964,7 +964,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:32.722Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -976,9 +976,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:32.724Z : Starting query 8/48
-[32minfo[39m 2021-05-03T09:58:35.230Z : Ending query 8/48 (duration: 2.505672228 s)
-[36mverbose[39m 2021-05-03T09:58:35.230Z : Query 8/48 result:
+info: Starting query 8/48
+info: Ending query 8/48 (duration: 2.764611234 s)
+verbose: Query 8/48 result:
 {
   "data": [
     {
@@ -1046,13 +1046,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:35.238Z : Memory usage after handling query 8/48: 
-      rss 349.79 MB
-      heapTotal 298.82 MB
-      heapUsed 277.82 MB
-      external 2.06 MB
-      arrayBuffers 0.62 MB
-[36mverbose[39m 2021-05-03T09:58:35.238Z : Query: 
+info: Memory usage after handling query 8/48: 
+      rss 596.78 MB
+      heapTotal 543.21 MB
+      heapUsed 514.1 MB
+      external 2.72 MB
+      arrayBuffers 1.29 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1075,7 +1075,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:35.239Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1107,7 +1107,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:35.239Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1119,9 +1119,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:35.239Z : Starting query 9/48
-[32minfo[39m 2021-05-03T09:58:37.605Z : Ending query 9/48 (duration: 2.366272540 s)
-[36mverbose[39m 2021-05-03T09:58:37.606Z : Query 9/48 result:
+info: Starting query 9/48
+info: Ending query 9/48 (duration: 3.22481175 s)
+verbose: Query 9/48 result:
 {
   "data": [
     {
@@ -1184,13 +1184,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:37.609Z : Memory usage after handling query 9/48: 
-      rss 473.08 MB
-      heapTotal 421.95 MB
-      heapUsed 403.3 MB
-      external 2.5 MB
-      arrayBuffers 1.06 MB
-[36mverbose[39m 2021-05-03T09:58:37.609Z : Query: 
+info: Memory usage after handling query 9/48: 
+      rss 221.41 MB
+      heapTotal 168.48 MB
+      heapUsed 150.15 MB
+      external 1.64 MB
+      arrayBuffers 0.21 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1213,7 +1213,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:37.609Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1245,7 +1245,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:37.609Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1257,9 +1257,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:37.609Z : Starting query 10/48
-[32minfo[39m 2021-05-03T09:58:39.962Z : Ending query 10/48 (duration: 2.352829451 s)
-[36mverbose[39m 2021-05-03T09:58:39.963Z : Query 10/48 result:
+info: Starting query 10/48
+info: Ending query 10/48 (duration: 232.112509303 s)
+verbose: Query 10/48 result:
 {
   "data": [
     {
@@ -1323,13 +1323,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:39.970Z : Memory usage after handling query 10/48: 
-      rss 600.09 MB
-      heapTotal 548.11 MB
-      heapUsed 516.18 MB
-      external 2.96 MB
-      arrayBuffers 1.38 MB
-[36mverbose[39m 2021-05-03T09:58:39.971Z : Query: 
+info: Memory usage after handling query 10/48: 
+      rss 218.5 MB
+      heapTotal 167.51 MB
+      heapUsed 147.09 MB
+      external 1.67 MB
+      arrayBuffers 0.23 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1352,7 +1352,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:39.971Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1384,7 +1384,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:39.971Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1396,9 +1396,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:39.971Z : Starting query 11/48
-[32minfo[39m 2021-05-03T09:58:42.529Z : Ending query 11/48 (duration: 2.557345085 s)
-[36mverbose[39m 2021-05-03T09:58:42.530Z : Query 11/48 result:
+info: Starting query 11/48
+info: Ending query 11/48 (duration: 3.692326645 s)
+verbose: Query 11/48 result:
 {
   "data": [
     {
@@ -1456,13 +1456,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:42.532Z : Memory usage after handling query 11/48: 
-      rss 228.44 MB
-      heapTotal 175.61 MB
-      heapUsed 145.7 MB
-      external 1.97 MB
-      arrayBuffers 0.54 MB
-[36mverbose[39m 2021-05-03T09:58:42.533Z : Query: 
+info: Memory usage after handling query 11/48: 
+      rss 342.62 MB
+      heapTotal 291.61 MB
+      heapUsed 270.22 MB
+      external 1.95 MB
+      arrayBuffers 0.52 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1485,7 +1485,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:42.533Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1517,7 +1517,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:42.533Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1529,9 +1529,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:42.533Z : Starting query 12/48
-[32minfo[39m 2021-05-03T09:58:44.607Z : Ending query 12/48 (duration: 2.73738675 s)
-[36mverbose[39m 2021-05-03T09:58:44.607Z : Query 12/48 result:
+info: Starting query 12/48
+info: Ending query 12/48 (duration: 2.246069239 s)
+verbose: Query 12/48 result:
 {
   "data": [
     {
@@ -1566,13 +1566,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:44.608Z : Memory usage after handling query 12/48: 
-      rss 308.42 MB
-      heapTotal 256.2 MB
-      heapUsed 234.31 MB
-      external 2.4 MB
-      arrayBuffers 0.97 MB
-[36mverbose[39m 2021-05-03T09:58:44.609Z : Query: 
+info: Memory usage after handling query 12/48: 
+      rss 429.86 MB
+      heapTotal 378.95 MB
+      heapUsed 351.34 MB
+      external 2.39 MB
+      arrayBuffers 0.95 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1595,7 +1595,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:44.609Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1627,7 +1627,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:44.609Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1639,9 +1639,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:44.609Z : Starting query 13/48
-[32minfo[39m 2021-05-03T09:58:46.604Z : Ending query 13/48 (duration: 1.994369949 s)
-[36mverbose[39m 2021-05-03T09:58:46.605Z : Query 13/48 result:
+info: Starting query 13/48
+info: Ending query 13/48 (duration: 2.274519513 s)
+verbose: Query 13/48 result:
 {
   "data": [
     {
@@ -1678,13 +1678,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:46.606Z : Memory usage after handling query 13/48: 
-      rss 231.89 MB
-      heapTotal 179.06 MB
-      heapUsed 107.31 MB
-      external 1.88 MB
-      arrayBuffers 0.35 MB
-[36mverbose[39m 2021-05-03T09:58:46.606Z : Query: 
+info: Memory usage after handling query 13/48: 
+      rss 518.87 MB
+      heapTotal 463.25 MB
+      heapUsed 442.5 MB
+      external 2.83 MB
+      arrayBuffers 1.3 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1707,7 +1707,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:46.606Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1739,7 +1739,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:46.606Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1751,9 +1751,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:46.607Z : Starting query 14/48
-[32minfo[39m 2021-05-03T09:58:48.533Z : Ending query 14/48 (duration: 1.926563212 s)
-[36mverbose[39m 2021-05-03T09:58:48.534Z : Query 14/48 result:
+info: Starting query 14/48
+info: Ending query 14/48 (duration: 2.379019899 s)
+verbose: Query 14/48 result:
 {
   "data": [
     {
@@ -1790,13 +1790,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:48.535Z : Memory usage after handling query 14/48: 
-      rss 273.57 MB
-      heapTotal 220.86 MB
-      heapUsed 198.87 MB
-      external 2.33 MB
-      arrayBuffers 0.77 MB
-[36mverbose[39m 2021-05-03T09:58:48.535Z : Query: 
+info: Memory usage after handling query 14/48: 
+      rss 262.92 MB
+      heapTotal 206.15 MB
+      heapUsed 106.35 MB
+      external 1.62 MB
+      arrayBuffers 0.13 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1819,7 +1819,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:48.535Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1851,7 +1851,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:48.535Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1863,9 +1863,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:48.535Z : Starting query 15/48
-[32minfo[39m 2021-05-03T09:58:50.373Z : Ending query 15/48 (duration: 1.837740011 s)
-[36mverbose[39m 2021-05-03T09:58:50.373Z : Query 15/48 result:
+info: Starting query 15/48
+info: Ending query 15/48 (duration: 233.131912556 s)
+verbose: Query 15/48 result:
 {
   "data": [
     {
@@ -1903,13 +1903,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:50.374Z : Memory usage after handling query 15/48: 
-      rss 359.84 MB
-      heapTotal 305.96 MB
-      heapUsed 279.72 MB
-      external 2.73 MB
-      arrayBuffers 1.25 MB
-[36mverbose[39m 2021-05-03T09:58:50.374Z : Query: 
+info: Memory usage after handling query 15/48: 
+      rss 182.68 MB
+      heapTotal 129.7 MB
+      heapUsed 108.49 MB
+      external 1.56 MB
+      arrayBuffers 0.12 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -1932,7 +1932,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:50.375Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -1964,7 +1964,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:50.375Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -1976,9 +1976,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:50.375Z : Starting query 16/48
-[32minfo[39m 2021-05-03T09:58:53.129Z : Ending query 16/48 (duration: 2.753962032 s)
-[36mverbose[39m 2021-05-03T09:58:53.130Z : Query 16/48 result:
+info: Starting query 16/48
+info: Ending query 16/48 (duration: 3.707152585 s)
+verbose: Query 16/48 result:
 {
   "data": [
     {
@@ -2024,13 +2024,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:53.133Z : Memory usage after handling query 16/48: 
-      rss 220.14 MB
-      heapTotal 170.7 MB
-      heapUsed 148.99 MB
-      external 1.58 MB
-      arrayBuffers 0.14 MB
-[36mverbose[39m 2021-05-03T09:58:53.133Z : Query: 
+info: Memory usage after handling query 16/48: 
+      rss 228.02 MB
+      heapTotal 174.35 MB
+      heapUsed 144.21 MB
+      external 1.98 MB
+      arrayBuffers 0.54 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -2053,7 +2053,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:53.133Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2085,7 +2085,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:53.133Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2097,9 +2097,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:53.133Z : Starting query 17/48
-[32minfo[39m 2021-05-03T09:58:55.534Z : Ending query 17/48 (duration: 2.400330241 s)
-[36mverbose[39m 2021-05-03T09:58:55.534Z : Query 17/48 result:
+info: Starting query 17/48
+info: Ending query 17/48 (duration: 4.811306070 s)
+verbose: Query 17/48 result:
 {
   "data": [
     {
@@ -2165,13 +2165,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:58:55.536Z : Memory usage after handling query 17/48: 
-      rss 345.43 MB
-      heapTotal 296.04 MB
-      heapUsed 267.48 MB
-      external 2.01 MB
-      arrayBuffers 0.58 MB
-[36mverbose[39m 2021-05-03T09:58:55.536Z : Query: 
+info: Memory usage after handling query 17/48: 
+      rss 239.82 MB
+      heapTotal 185.7 MB
+      heapUsed 145.01 MB
+      external 1.65 MB
+      arrayBuffers 0.22 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -2194,7 +2194,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:58:55.536Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2226,7 +2226,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:58:55.536Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2238,9 +2238,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:58:55.536Z : Starting query 18/48
-[32minfo[39m 2021-05-03T09:58:57.750Z : Ending query 18/48 (duration: 2.213445792 s)
-[36mverbose[39m 2021-05-03T09:58:57.751Z : Query 18/48 result:
+info: Starting query 18/48
+info: Ending query 18/48 (duration: 2.548929351 s)
+verbose: Query 18/48 result:
 {
   "data": [
     {
@@ -2261,138 +2261,6 @@
             ],
             "name": "Competitive knowledge graph generation",
             "text": "The Web consists of a large amount of information which can be used to answer questions people may have. As more and more data becomes available, more resources are needed to find the right data to answer a question. Currently, big tech companies like Google, Amazon or Facebook solve this by centralizing all these data, integrating them into knowledge graphs and providing (paid) services to query these data. However, big tech companies control which data they integrate, for example: Amazon integrates the UK railway schedule for it’s virtual assistant Alexa, but not the Belgian railway schedule. Either you limit your application to the data provided by the big tech companies or you take part in the harvesting race to generate your own knowledge graph. Although, harvesting, centralizing and integrating such amounts of data is not sustainable for smaller companies and individuals. Different approaches such as federated or decentralized generation of knowledge graphs are not considered yet.\n\nIn this Master thesis, you will investigate:\n- which different approaches, besides centralized generation, can be applied for generating knowledge graphs.\n- which trade-offs need to be considered when choosing a generation approach for certain use cases such as a public transport schedule.\n\nProgramming languages: Python\n\nTechnologies: RDF, RML.io, LDF/TPF, SOLID is bonus but willingness to learn"
-          },
-          "contactPoint": [
-            {
-              "id": "https://natadimou.com/#me",
-              "mbox": "mailto:anastasia.dimou@ugent.be",
-              "familyName": "Dimou",
-              "givenName": "Anastasia"
-            },
-            {
-              "id": "https://natadimou.com/#me",
-              "mbox": "mailto:anastasia.dimou@ugent.be",
-              "familyName": "Dimou",
-              "givenName": "Αναστασία"
-            },
-            {
-              "id": "https://natadimou.com/#me",
-              "mbox": "mailto:anastasia.dimou@ugent.be",
-              "familyName": "Δήμου",
-              "givenName": "Anastasia"
-            },
-            {
-              "id": "https://natadimou.com/#me",
-              "mbox": "mailto:anastasia.dimou@ugent.be",
-              "familyName": "Δήμου",
-              "givenName": "Αναστασία"
-            }
-          ],
-          "numberOfEmployees": {
-            "maxValue": "1"
-          }
-        }
-      ]
-    }
-  ]
-}
-[32minfo[39m 2021-05-03T09:58:57.753Z : Memory usage after handling query 18/48: 
-      rss 467.08 MB
-      heapTotal 418.4 MB
-      heapUsed 385.1 MB
-      external 2.4 MB
-      arrayBuffers 0.84 MB
-[36mverbose[39m 2021-05-03T09:58:57.753Z : Query: 
-{
-  id(_:KNOWS)
-  member {
-    slug (_: "decide-yourself-what-happens-with-your-data")
-    year (_: "2021")
-    id
-    subject @single {
-      keywords
-      name @single
-      text @single
-    }
-    contactPoint {
-      id @single
-      givenName @single
-      familyName @single
-      mbox @single
-    }
-    numberOfEmployees @single {
-      maxValue @single
-    }
-  }
-}
-[36mverbose[39m 2021-05-03T09:58:57.754Z : Context: {
-  "@context": {
-    "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
-    "foaf": "http://xmlns.com/foaf/0.1/",
-    "schema": "http://schema.org/",
-    "bbc": "http://www.bbc.co.uk/ontologies/coreconcepts/",
-    "dp": "http://dbpedia.org/ontology/",
-    "member": {
-      "@reverse": "schema:memberOf"
-    },
-    "subject": "schema:subject",
-    "keywords": "schema:keywords",
-    "hasPart": "schema:hasPart",
-    "text": "schema:text",
-    "contactPoint": "schema:contactPoint",
-    "mbox": "foaf:mbox",
-    "givenName": {
-      "@id": "foaf:givenName",
-      "@language": "en"
-    },
-    "familyName": {
-      "@id": "foaf:familyName",
-      "@language": "en"
-    },
-    "numberOfEmployees": "schema:numberOfEmployees",
-    "maxValue": "schema:maxValue",
-    "additionalType": "schema:additionalType",
-    "name": "schema:name",
-    "year": "dp:year",
-    "slug": "bbc:slug"
-  }
-}
-[36mverbose[39m 2021-05-03T09:58:57.754Z : Sources: [
-  "https://data.knows.idlab.ugent.be/person/office/#]",
-  "https://ruben.verborgh.org/profile/#me",
-  "https://pieterheyvaert.com/#me",
-  "https://pietercolpaert.be/#me",
-  "https://www.rubensworks.net/#me",
-  "https://ben.de-meester.org/#me",
-  "https://natadimou.com/#me",
-  "https://data.knows.idlab.ugent.be/person/femkeongenae/#me",
-  "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
-  "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
-]
-[32minfo[39m 2021-05-03T09:58:57.754Z : Starting query 19/48
-[32minfo[39m 2021-05-03T09:59:00.327Z : Ending query 19/48 (duration: 2.572535519 s)
-[36mverbose[39m 2021-05-03T09:59:00.327Z : Query 19/48 result:
-{
-  "data": [
-    {
-      "member": [
-        {
-          "id": [
-            "https://data.knows.idlab.ugent.be/master-thesis/2021/decide-yourself-what-happens-with-your-data"
-          ],
-          "subject": {
-            "keywords": [
-              "Artificial Intelligence",
-              "AI",
-              "ML",
-              "Decentralization",
-              "GDPR",
-              "Learning",
-              "Machine Learning",
-              "privacy"
-            ],
-            "name": "Decide yourself what happens with your data",
-            "text": "‘Smart devices’, but how are they smart? Well, they use Web services to answer questions you may have about your health such as ‘Is my current heart rate normal?’ or ‘Did I sleep enough last night?’. However, health data is personal data which you may not want to share with everyone. Currently, health applications centralize all your health data to give you advice and allow you to compare your heart rate or sleeping pattern with other users. As a user, you want to compare your heart rate during a workout with your friends but not share this information with anyone else, which is currently impossible.\n\nIn this Master thesis, you will investigate how:\n - data owners can express their data usage consent of their health data.\n - data owners can limit access to their health data depending on their data usage consent.\n"
           },
           "contactPoint": [
             {
@@ -2434,17 +2302,17 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:00.329Z : Memory usage after handling query 19/48: 
-      rss 229.32 MB
-      heapTotal 178.6 MB
-      heapUsed 143.06 MB
-      external 2 MB
-      arrayBuffers 0.57 MB
-[36mverbose[39m 2021-05-03T09:59:00.329Z : Query: 
+info: Memory usage after handling query 18/48: 
+      rss 348.61 MB
+      heapTotal 295.08 MB
+      heapUsed 272.28 MB
+      external 2.14 MB
+      arrayBuffers 0.71 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
-    slug (_: "boosting-analytical-potential-of-health-tracking-data-using-rml-and-solid")
+    slug (_: "decide-yourself-what-happens-with-your-data")
     year (_: "2021")
     id
     subject @single {
@@ -2463,7 +2331,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:00.329Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2495,7 +2363,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:00.329Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2507,9 +2375,141 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:00.329Z : Starting query 20/48
-[32minfo[39m 2021-05-03T09:59:02.960Z : Ending query 20/48 (duration: 2.630792298 s)
-[36mverbose[39m 2021-05-03T09:59:02.961Z : Query 20/48 result:
+info: Starting query 19/48
+info: Ending query 19/48 (duration: 2.435436880 s)
+verbose: Query 19/48 result:
+{
+  "data": [
+    {
+      "member": [
+        {
+          "id": [
+            "https://data.knows.idlab.ugent.be/master-thesis/2021/decide-yourself-what-happens-with-your-data"
+          ],
+          "subject": {
+            "keywords": [
+              "Artificial Intelligence",
+              "AI",
+              "ML",
+              "Decentralization",
+              "GDPR",
+              "Learning",
+              "Machine Learning",
+              "privacy"
+            ],
+            "name": "Decide yourself what happens with your data",
+            "text": "‘Smart devices’, but how are they smart? Well, they use Web services to answer questions you may have about your health such as ‘Is my current heart rate normal?’ or ‘Did I sleep enough last night?’. However, health data is personal data which you may not want to share with everyone. Currently, health applications centralize all your health data to give you advice and allow you to compare your heart rate or sleeping pattern with other users. As a user, you want to compare your heart rate during a workout with your friends but not share this information with anyone else, which is currently impossible.\n\nIn this Master thesis, you will investigate how:\n - data owners can express their data usage consent of their health data.\n - data owners can limit access to their health data depending on their data usage consent.\n"
+          },
+          "contactPoint": [
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Αναστασία"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Αναστασία"
+            }
+          ],
+          "numberOfEmployees": {
+            "maxValue": "1"
+          }
+        }
+      ]
+    }
+  ]
+}
+info: Memory usage after handling query 19/48: 
+      rss 470.94 MB
+      heapTotal 417.4 MB
+      heapUsed 391.63 MB
+      external 2.39 MB
+      arrayBuffers 0.96 MB
+verbose: Query: 
+{
+  id(_:KNOWS)
+  member {
+    slug (_: "boosting-analytical-potential-of-health-tracking-data-using-rml-and-solid")
+    year (_: "2021")
+    id
+    subject @single {
+      keywords
+      name @single
+      text @single
+    }
+    contactPoint {
+      id @single
+      givenName @single
+      familyName @single
+      mbox @single
+    }
+    numberOfEmployees @single {
+      maxValue @single
+    }
+  }
+}
+verbose: Context: {
+  "@context": {
+    "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "bbc": "http://www.bbc.co.uk/ontologies/coreconcepts/",
+    "dp": "http://dbpedia.org/ontology/",
+    "member": {
+      "@reverse": "schema:memberOf"
+    },
+    "subject": "schema:subject",
+    "keywords": "schema:keywords",
+    "hasPart": "schema:hasPart",
+    "text": "schema:text",
+    "contactPoint": "schema:contactPoint",
+    "mbox": "foaf:mbox",
+    "givenName": {
+      "@id": "foaf:givenName",
+      "@language": "en"
+    },
+    "familyName": {
+      "@id": "foaf:familyName",
+      "@language": "en"
+    },
+    "numberOfEmployees": "schema:numberOfEmployees",
+    "maxValue": "schema:maxValue",
+    "additionalType": "schema:additionalType",
+    "name": "schema:name",
+    "year": "dp:year",
+    "slug": "bbc:slug"
+  }
+}
+verbose: Sources: [
+  "https://data.knows.idlab.ugent.be/person/office/#]",
+  "https://ruben.verborgh.org/profile/#me",
+  "https://pieterheyvaert.com/#me",
+  "https://pietercolpaert.be/#me",
+  "https://www.rubensworks.net/#me",
+  "https://ben.de-meester.org/#me",
+  "https://natadimou.com/#me",
+  "https://data.knows.idlab.ugent.be/person/femkeongenae/#me",
+  "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
+  "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
+]
+info: Starting query 20/48
+info: Ending query 20/48 (duration: 231.63383179 s)
+verbose: Query 20/48 result:
 {
   "data": [
     {
@@ -2574,13 +2574,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:02.961Z : Memory usage after handling query 20/48: 
-      rss 308.14 MB
-      heapTotal 257.88 MB
-      heapUsed 150.91 MB
-      external 1.74 MB
-      arrayBuffers 0.31 MB
-[36mverbose[39m 2021-05-03T09:59:02.962Z : Query: 
+info: Memory usage after handling query 20/48: 
+      rss 222.88 MB
+      heapTotal 169.63 MB
+      heapUsed 140.4 MB
+      external 1.6 MB
+      arrayBuffers 0.17 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -2603,7 +2603,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:02.962Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2635,7 +2635,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:02.962Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2647,9 +2647,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:02.962Z : Starting query 21/48
-[32minfo[39m 2021-05-03T09:59:04.797Z : Ending query 21/48 (duration: 1.834622529 s)
-[36mverbose[39m 2021-05-03T09:59:04.798Z : Query 21/48 result:
+info: Starting query 21/48
+info: Ending query 21/48 (duration: 3.63744245 s)
+verbose: Query 21/48 result:
 {
   "data": [
     {
@@ -2684,13 +2684,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:04.799Z : Memory usage after handling query 21/48: 
-      rss 308.55 MB
-      heapTotal 258.23 MB
-      heapUsed 228.53 MB
+info: Memory usage after handling query 21/48: 
+      rss 307.09 MB
+      heapTotal 253.73 MB
+      heapUsed 235.1 MB
       external 1.96 MB
       arrayBuffers 0.53 MB
-[36mverbose[39m 2021-05-03T09:59:04.799Z : Query: 
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -2713,7 +2713,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:04.799Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2745,7 +2745,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:04.800Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2757,9 +2757,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:04.800Z : Starting query 22/48
-[32minfo[39m 2021-05-03T09:59:06.592Z : Ending query 22/48 (duration: 1.792429649 s)
-[36mverbose[39m 2021-05-03T09:59:06.593Z : Query 22/48 result:
+info: Starting query 22/48
+info: Ending query 22/48 (duration: 2.985685282 s)
+verbose: Query 22/48 result:
 {
   "data": [
     {
@@ -2794,13 +2794,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:06.597Z : Memory usage after handling query 22/48: 
-      rss 389.68 MB
-      heapTotal 340.07 MB
-      heapUsed 317.51 MB
-      external 2.4 MB
-      arrayBuffers 0.97 MB
-[36mverbose[39m 2021-05-03T09:59:06.597Z : Query: 
+info: Memory usage after handling query 22/48: 
+      rss 395.86 MB
+      heapTotal 342.57 MB
+      heapUsed 314 MB
+      external 2.27 MB
+      arrayBuffers 0.84 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -2823,7 +2823,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:06.597Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2855,7 +2855,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:06.597Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2867,9 +2867,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:06.597Z : Starting query 23/48
-[32minfo[39m 2021-05-03T09:59:08.401Z : Ending query 23/48 (duration: 1.803221585 s)
-[36mverbose[39m 2021-05-03T09:59:08.402Z : Query 23/48 result:
+info: Starting query 23/48
+info: Ending query 23/48 (duration: 2.460971804 s)
+verbose: Query 23/48 result:
 {
   "data": [
     {
@@ -2905,13 +2905,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:08.406Z : Memory usage after handling query 23/48: 
-      rss 474.46 MB
-      heapTotal 424.31 MB
-      heapUsed 393.24 MB
-      external 2.74 MB
-      arrayBuffers 1.31 MB
-[36mverbose[39m 2021-05-03T09:59:08.406Z : Query: 
+info: Memory usage after handling query 23/48: 
+      rss 483.53 MB
+      heapTotal 425.31 MB
+      heapUsed 406.15 MB
+      external 2.71 MB
+      arrayBuffers 1.28 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -2934,7 +2934,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:08.406Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -2966,7 +2966,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:08.407Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -2978,9 +2978,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:08.407Z : Starting query 24/48
-[32minfo[39m 2021-05-03T09:59:10.320Z : Ending query 24/48 (duration: 1.913629938 s)
-[36mverbose[39m 2021-05-03T09:59:10.321Z : Query 24/48 result:
+info: Starting query 24/48
+info: Ending query 24/48 (duration: 2.492240214 s)
+verbose: Query 24/48 result:
 {
   "data": [
     {
@@ -3016,13 +3016,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:10.322Z : Memory usage after handling query 24/48: 
-      rss 560.4 MB
-      heapTotal 509.72 MB
-      heapUsed 484.07 MB
-      external 3.19 MB
-      arrayBuffers 1.76 MB
-[36mverbose[39m 2021-05-03T09:59:10.322Z : Query: 
+info: Memory usage after handling query 24/48: 
+      rss 571.66 MB
+      heapTotal 513.16 MB
+      heapUsed 488.22 MB
+      external 3.1 MB
+      arrayBuffers 1.67 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3045,7 +3045,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:10.322Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3077,7 +3077,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:10.322Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3089,9 +3089,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:10.323Z : Starting query 25/48
-[32minfo[39m 2021-05-03T09:59:12.922Z : Ending query 25/48 (duration: 2.598967202 s)
-[36mverbose[39m 2021-05-03T09:59:12.923Z : Query 25/48 result:
+info: Starting query 25/48
+info: Ending query 25/48 (duration: 233.394965004 s)
+verbose: Query 25/48 result:
 {
   "data": [
     {
@@ -3153,13 +3153,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:12.925Z : Memory usage after handling query 25/48: 
-      rss 248.65 MB
-      heapTotal 196.49 MB
-      heapUsed 149.08 MB
-      external 3.66 MB
-      arrayBuffers 0.47 MB
-[36mverbose[39m 2021-05-03T09:59:12.925Z : Query: 
+info: Memory usage after handling query 25/48: 
+      rss 229.79 MB
+      heapTotal 171.83 MB
+      heapUsed 149.86 MB
+      external 2.11 MB
+      arrayBuffers 0.05 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3182,7 +3182,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:12.926Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3214,7 +3214,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:12.926Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3226,9 +3226,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:12.926Z : Starting query 26/48
-[32minfo[39m 2021-05-03T09:59:14.688Z : Ending query 26/48 (duration: 1.761656342 s)
-[36mverbose[39m 2021-05-03T09:59:14.688Z : Query 26/48 result:
+info: Starting query 26/48
+info: Ending query 26/48 (duration: 3.898988912 s)
+verbose: Query 26/48 result:
 {
   "data": [
     {
@@ -3269,13 +3269,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:14.690Z : Memory usage after handling query 26/48: 
-      rss 314.55 MB
-      heapTotal 264.04 MB
-      heapUsed 243.56 MB
-      external 2.68 MB
-      arrayBuffers 0.85 MB
-[36mverbose[39m 2021-05-03T09:59:14.690Z : Query: 
+info: Memory usage after handling query 26/48: 
+      rss 318.09 MB
+      heapTotal 259.88 MB
+      heapUsed 240.38 MB
+      external 2.32 MB
+      arrayBuffers 0.54 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3298,7 +3298,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:14.690Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3330,7 +3330,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:14.691Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3342,9 +3342,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:14.691Z : Starting query 27/48
-[32minfo[39m 2021-05-03T09:59:17.159Z : Ending query 27/48 (duration: 2.466992821 s)
-[36mverbose[39m 2021-05-03T09:59:17.159Z : Query 27/48 result:
+info: Starting query 27/48
+info: Ending query 27/48 (duration: 3.27950551 s)
+verbose: Query 27/48 result:
 {
   "data": [
     {
@@ -3406,13 +3406,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:17.161Z : Memory usage after handling query 27/48: 
-      rss 235.57 MB
-      heapTotal 184.35 MB
-      heapUsed 148.58 MB
-      external 1.88 MB
-      arrayBuffers 0.45 MB
-[36mverbose[39m 2021-05-03T09:59:17.162Z : Query: 
+info: Memory usage after handling query 27/48: 
+      rss 442.35 MB
+      heapTotal 383.98 MB
+      heapUsed 362.56 MB
+      external 2.75 MB
+      arrayBuffers 0.98 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3435,7 +3435,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:17.162Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3467,7 +3467,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:17.163Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3479,9 +3479,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:17.164Z : Starting query 28/48
-[32minfo[39m 2021-05-03T09:59:19.810Z : Ending query 28/48 (duration: 2.645669546 s)
-[36mverbose[39m 2021-05-03T09:59:19.811Z : Query 28/48 result:
+info: Starting query 28/48
+info: Ending query 28/48 (duration: 2.834256474 s)
+verbose: Query 28/48 result:
 {
   "data": [
     {
@@ -3548,13 +3548,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:19.814Z : Memory usage after handling query 28/48: 
-      rss 324.91 MB
-      heapTotal 273.7 MB
-      heapUsed 148.51 MB
-      external 1.69 MB
-      arrayBuffers 0.26 MB
-[36mverbose[39m 2021-05-03T09:59:19.815Z : Query: 
+info: Memory usage after handling query 28/48: 
+      rss 573.27 MB
+      heapTotal 510.83 MB
+      heapUsed 482.14 MB
+      external 3.19 MB
+      arrayBuffers 1.42 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3577,7 +3577,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:19.815Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3609,7 +3609,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:19.816Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3621,9 +3621,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:19.816Z : Starting query 29/48
-[32minfo[39m 2021-05-03T09:59:22.029Z : Ending query 29/48 (duration: 2.212873240 s)
-[36mverbose[39m 2021-05-03T09:59:22.030Z : Query 29/48 result:
+info: Starting query 29/48
+info: Ending query 29/48 (duration: 3.151450717 s)
+verbose: Query 29/48 result:
 {
   "data": [
     {
@@ -3647,6 +3647,12 @@
             "text": "The EU General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) are the most important change in data privacy regulation the past few years. They are designed to protect and empower citizens data privacy and reshape the way organizations approach data privacy. However, bridging the gap between the legal framework and available technological implementation measures still needs to be addressed. In particular, in the case of emerging data-driven applications, data needs to conform to specified patterns and corresponding tools need to assess how well they conform.\n\nThis master thesis will try to answer questions like: (i) how can my personal data be deleted? (ii) how does this affect archiving or other people personal data, e.g., in the case of social media? (iii) what are the different implementation strategies of erasure?"
           },
           "contactPoint": [
+            {
+              "id": "https://ben.de-meester.org/#me",
+              "mbox": "mailto:ben.demeester@ugent.be",
+              "familyName": "De Meester",
+              "givenName": "Ben"
+            },
             {
               "id": "https://natadimou.com/#me",
               "mbox": "mailto:anastasia.dimou@ugent.be",
@@ -3680,13 +3686,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:22.032Z : Memory usage after handling query 29/48: 
-      rss 346.8 MB
-      heapTotal 295.52 MB
-      heapUsed 267.43 MB
-      external 1.97 MB
-      arrayBuffers 0.54 MB
-[36mverbose[39m 2021-05-03T09:59:22.032Z : Query: 
+info: Memory usage after handling query 29/48: 
+      rss 235.98 MB
+      heapTotal 173.36 MB
+      heapUsed 144.82 MB
+      external 2.02 MB
+      arrayBuffers 0.59 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3709,7 +3715,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:22.033Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3741,7 +3747,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:22.034Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3753,9 +3759,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:22.034Z : Starting query 30/48
-[32minfo[39m 2021-05-03T09:59:24.774Z : Ending query 30/48 (duration: 2.739277926 s)
-[36mverbose[39m 2021-05-03T09:59:24.774Z : Query 30/48 result:
+info: Starting query 30/48
+info: Ending query 30/48 (duration: 231.575578778 s)
+verbose: Query 30/48 result:
 {
   "data": [
     {
@@ -3822,13 +3828,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:24.775Z : Memory usage after handling query 30/48: 
-      rss 469.37 MB
-      heapTotal 418.6 MB
-      heapUsed 399.73 MB
-      external 2.65 MB
-      arrayBuffers 1.21 MB
-[36mverbose[39m 2021-05-03T09:59:24.775Z : Query: 
+info: Memory usage after handling query 30/48: 
+      rss 227.38 MB
+      heapTotal 169.93 MB
+      heapUsed 140.11 MB
+      external 1.6 MB
+      arrayBuffers 0.16 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3851,7 +3857,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:24.775Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -3883,7 +3889,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:24.775Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -3895,9 +3901,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:24.776Z : Starting query 31/48
-[32minfo[39m 2021-05-03T09:59:26.957Z : Ending query 31/48 (duration: 2.181757842 s)
-[36mverbose[39m 2021-05-03T09:59:26.958Z : Query 31/48 result:
+info: Starting query 31/48
+info: Ending query 31/48 (duration: 3.621692202 s)
+verbose: Query 31/48 result:
 {
   "data": [
     {
@@ -3955,13 +3961,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:26.959Z : Memory usage after handling query 31/48: 
-      rss 596.41 MB
-      heapTotal 540.45 MB
-      heapUsed 509.45 MB
-      external 2.7 MB
-      arrayBuffers 1.27 MB
-[36mverbose[39m 2021-05-03T09:59:26.959Z : Query: 
+info: Memory usage after handling query 31/48: 
+      rss 351.06 MB
+      heapTotal 292.53 MB
+      heapUsed 268.45 MB
+      external 1.95 MB
+      arrayBuffers 0.51 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -3984,7 +3990,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:26.959Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4016,7 +4022,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:26.960Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4028,9 +4034,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:26.960Z : Starting query 32/48
-[32minfo[39m 2021-05-03T09:59:29.512Z : Ending query 32/48 (duration: 2.552160681 s)
-[36mverbose[39m 2021-05-03T09:59:29.513Z : Query 32/48 result:
+info: Starting query 32/48
+info: Ending query 32/48 (duration: 2.768360379 s)
+verbose: Query 32/48 result:
 {
   "data": [
     {
@@ -4089,13 +4095,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:29.513Z : Memory usage after handling query 32/48: 
-      rss 282.27 MB
-      heapTotal 226.61 MB
-      heapUsed 146.24 MB
-      external 1.99 MB
-      arrayBuffers 0.56 MB
-[36mverbose[39m 2021-05-03T09:59:29.514Z : Query: 
+info: Memory usage after handling query 32/48: 
+      rss 474.24 MB
+      heapTotal 415.88 MB
+      heapUsed 390.88 MB
+      external 2.37 MB
+      arrayBuffers 0.94 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -4118,7 +4124,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:29.514Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4150,7 +4156,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:29.514Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4162,9 +4168,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:29.514Z : Starting query 33/48
-[32minfo[39m 2021-05-03T09:59:31.426Z : Ending query 33/48 (duration: 1.911204413 s)
-[36mverbose[39m 2021-05-03T09:59:31.426Z : Query 33/48 result:
+info: Starting query 33/48
+info: Ending query 33/48 (duration: 2.575222831 s)
+verbose: Query 33/48 result:
 {
   "data": [
     {
@@ -4202,13 +4208,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:31.427Z : Memory usage after handling query 33/48: 
-      rss 313.08 MB
-      heapTotal 258.45 MB
-      heapUsed 237.64 MB
-      external 2.41 MB
-      arrayBuffers 0.98 MB
-[36mverbose[39m 2021-05-03T09:59:31.427Z : Query: 
+info: Memory usage after handling query 33/48: 
+      rss 557.06 MB
+      heapTotal 499.47 MB
+      heapUsed 480.97 MB
+      external 2.65 MB
+      arrayBuffers 1.22 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -4231,7 +4237,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:31.427Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4263,7 +4269,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:31.427Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4275,9 +4281,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:31.427Z : Starting query 34/48
-[32minfo[39m 2021-05-03T09:59:33.864Z : Ending query 34/48 (duration: 2.436612238 s)
-[36mverbose[39m 2021-05-03T09:59:33.865Z : Query 34/48 result:
+info: Starting query 34/48
+info: Ending query 34/48 (duration: 3.539472309 s)
+verbose: Query 34/48 result:
 {
   "data": [
     {
@@ -4337,13 +4343,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:33.866Z : Memory usage after handling query 34/48: 
-      rss 261.1 MB
-      heapTotal 210.1 MB
-      heapUsed 148.34 MB
-      external 1.91 MB
-      arrayBuffers 0.48 MB
-[36mverbose[39m 2021-05-03T09:59:33.867Z : Query: 
+info: Memory usage after handling query 34/48: 
+      rss 230.52 MB
+      heapTotal 172.11 MB
+      heapUsed 146.3 MB
+      external 1.83 MB
+      arrayBuffers 0.4 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -4366,7 +4372,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:33.867Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4398,7 +4404,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:33.867Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4410,9 +4416,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:33.867Z : Starting query 35/48
-[32minfo[39m 2021-05-03T09:59:36.062Z : Ending query 35/48 (duration: 2.195111817 s)
-[36mverbose[39m 2021-05-03T09:59:36.063Z : Query 35/48 result:
+info: Starting query 35/48
+info: Ending query 35/48 (duration: 231.921507460 s)
+verbose: Query 35/48 result:
 {
   "data": [
     {
@@ -4473,13 +4479,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:36.065Z : Memory usage after handling query 35/48: 
-      rss 347.93 MB
-      heapTotal 297.42 MB
-      heapUsed 268.94 MB
-      external 2.26 MB
-      arrayBuffers 0.82 MB
-[36mverbose[39m 2021-05-03T09:59:36.065Z : Query: 
+info: Memory usage after handling query 35/48: 
+      rss 224.98 MB
+      heapTotal 169.16 MB
+      heapUsed 146.82 MB
+      external 1.61 MB
+      arrayBuffers 0.18 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -4502,7 +4508,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:36.065Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4534,7 +4540,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:36.065Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4546,9 +4552,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:36.065Z : Starting query 36/48
-[32minfo[39m 2021-05-03T09:59:38.606Z : Ending query 36/48 (duration: 2.540305785 s)
-[36mverbose[39m 2021-05-03T09:59:38.607Z : Query 36/48 result:
+info: Starting query 36/48
+info: Ending query 36/48 (duration: 3.503326402 s)
+verbose: Query 36/48 result:
 {
   "data": [
     {
@@ -4615,13 +4621,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:38.608Z : Memory usage after handling query 36/48: 
-      rss 245.8 MB
-      heapTotal 194.6 MB
-      heapUsed 151.75 MB
-      external 1.86 MB
-      arrayBuffers 0.43 MB
-[36mverbose[39m 2021-05-03T09:59:38.608Z : Query: 
+info: Memory usage after handling query 36/48: 
+      rss 353.97 MB
+      heapTotal 295.77 MB
+      heapUsed 269.9 MB
+      external 2.01 MB
+      arrayBuffers 0.58 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -4644,7 +4650,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:38.608Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4676,7 +4682,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:38.608Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4688,9 +4694,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:38.608Z : Starting query 37/48
-[32minfo[39m 2021-05-03T09:59:41.175Z : Ending query 37/48 (duration: 2.566443147 s)
-[36mverbose[39m 2021-05-03T09:59:41.176Z : Query 37/48 result:
+info: Starting query 37/48
+info: Ending query 37/48 (duration: 2.943068883 s)
+verbose: Query 37/48 result:
 {
   "data": [
     {
@@ -4757,13 +4763,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:41.179Z : Memory usage after handling query 37/48: 
-      rss 280.91 MB
-      heapTotal 229.95 MB
-      heapUsed 144.23 MB
-      external 1.59 MB
-      arrayBuffers 0.16 MB
-[36mverbose[39m 2021-05-03T09:59:41.179Z : Query: 
+info: Memory usage after handling query 37/48: 
+      rss 478.22 MB
+      heapTotal 420.11 MB
+      heapUsed 399.23 MB
+      external 2.42 MB
+      arrayBuffers 0.99 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -4786,7 +4792,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:41.180Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -4818,7 +4824,7 @@
     "slug": "bbc:slug"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:41.180Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -4830,9 +4836,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:41.180Z : Starting query 38/48
-[32minfo[39m 2021-05-03T09:59:43.562Z : Ending query 38/48 (duration: 2.382216439 s)
-[36mverbose[39m 2021-05-03T09:59:43.563Z : Query 38/48 result:
+info: Starting query 38/48
+info: Ending query 38/48 (duration: 2.725902507 s)
+verbose: Query 38/48 result:
 {
   "data": [
     {
@@ -4899,13 +4905,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:43.565Z : Memory usage after handling query 38/48: 
-      rss 347.53 MB
-      heapTotal 297.04 MB
-      heapUsed 274.05 MB
-      external 2.05 MB
-      arrayBuffers 0.62 MB
-[36mverbose[39m 2021-05-03T09:59:43.565Z : Query: 
+info: Memory usage after handling query 38/48: 
+      rss 608.72 MB
+      heapTotal 546.96 MB
+      heapUsed 517.04 MB
+      external 2.71 MB
+      arrayBuffers 1.28 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   hasProject {
@@ -4916,7 +4922,7 @@
     url @single @optional
   }
 }
-[36mverbose[39m 2021-05-03T09:59:43.565Z : Context: {
+verbose: Context: {
   "@context": {
     "schema": "http://schema.org/",
     "image": "schema:image",
@@ -4932,14 +4938,14 @@
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:43.565Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://data.knows.idlab.ugent.be/person/office/news.ttl",
   "https://data.knows.idlab.ugent.be/person/office/projects.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:43.565Z : Starting query 39/48
-[32minfo[39m 2021-05-03T09:59:43.711Z : Ending query 39/48 (duration: 0.145572663 s)
-[36mverbose[39m 2021-05-03T09:59:43.712Z : Query 39/48 result:
+info: Starting query 39/48
+info: Ending query 39/48 (duration: 0.161477360 s)
+verbose: Query 39/48 result:
 {
   "data": [
     {
@@ -4976,13 +4982,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:43.713Z : Memory usage after handling query 39/48: 
-      rss 348.26 MB
-      heapTotal 297.29 MB
-      heapUsed 269.03 MB
-      external 1.94 MB
-      arrayBuffers 0.51 MB
-[36mverbose[39m 2021-05-03T09:59:43.714Z : Query: 
+info: Memory usage after handling query 39/48: 
+      rss 609.96 MB
+      heapTotal 547.96 MB
+      heapUsed 525.46 MB
+      external 2.73 MB
+      arrayBuffers 1.29 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   created {
@@ -4992,7 +4998,7 @@
     articleBody @single
   }
 }
-[36mverbose[39m 2021-05-03T09:59:43.714Z : Context: {
+verbose: Context: {
   "@context": {
     "schema": "http://schema.org/",
     "image": "schema:image",
@@ -5008,14 +5014,14 @@
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:43.714Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://data.knows.idlab.ugent.be/person/office/news.ttl",
   "https://data.knows.idlab.ugent.be/person/office/projects.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:43.715Z : Starting query 40/48
-[32minfo[39m 2021-05-03T09:59:43.793Z : Ending query 40/48 (duration: 0.78573762 s)
-[36mverbose[39m 2021-05-03T09:59:43.794Z : Query 40/48 result:
+info: Starting query 40/48
+info: Ending query 40/48 (duration: 0.71237304 s)
+verbose: Query 40/48 result:
 {
   "data": [
     {
@@ -5030,13 +5036,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:43.795Z : Memory usage after handling query 40/48: 
-      rss 348.26 MB
-      heapTotal 297.29 MB
-      heapUsed 271.69 MB
-      external 1.95 MB
-      arrayBuffers 0.51 MB
-[36mverbose[39m 2021-05-03T09:59:43.795Z : Query: 
+info: Memory usage after handling query 40/48: 
+      rss 609.96 MB
+      heapTotal 547.96 MB
+      heapUsed 528.1 MB
+      external 2.74 MB
+      arrayBuffers 1.3 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   topics {
@@ -5050,7 +5056,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:43.795Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -5070,16 +5076,16 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:43.796Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://ruben.verborgh.org/profile/#me",
   "https://data.knows.idlab.ugent.be/person/doerthe/#me",
   "https://pietercolpaert.be/#me",
   "https://data.knows.idlab.ugent.be/person/office/topics.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:43.796Z : Starting query 41/48
-[32minfo[39m 2021-05-03T09:59:45.124Z : Ending query 41/48 (duration: 1.327866905 s)
-[36mverbose[39m 2021-05-03T09:59:45.125Z : Query 41/48 result:
+info: Starting query 41/48
+info: Ending query 41/48 (duration: 1.730282387 s)
+verbose: Query 41/48 result:
 {
   "data": [
     {
@@ -5168,13 +5174,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:45.127Z : Memory usage after handling query 41/48: 
-      rss 424.83 MB
-      heapTotal 374.89 MB
-      heapUsed 354.97 MB
-      external 2.09 MB
-      arrayBuffers 0.66 MB
-[36mverbose[39m 2021-05-03T09:59:45.128Z : Query: 
+info: Memory usage after handling query 41/48: 
+      rss 201.65 MB
+      heapTotal 139.36 MB
+      heapUsed 106.04 MB
+      external 1.64 MB
+      arrayBuffers 0.2 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   contributedTo {
@@ -5194,7 +5200,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:45.128Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "schema": "http://schema.org/",
@@ -5218,14 +5224,14 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:45.129Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://data.verborgh.org/ruben",
   "https://data.knows.idlab.ugent.be/person/office/publications.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:45.129Z : Starting query 42/48
-[32minfo[39m 2021-05-03T09:59:59.439Z : Ending query 42/48 (duration: 14.309984121 s)
-[36mverbose[39m 2021-05-03T09:59:59.442Z : Query 42/48 result:
+info: Starting query 42/48
+info: Ending query 42/48 (duration: 14.983482320 s)
+verbose: Query 42/48 result:
 {
   "data": [
     {
@@ -7133,13 +7139,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:59.447Z : Memory usage after handling query 42/48: 
-      rss 283.6 MB
-      heapTotal 232.12 MB
-      heapUsed 118.45 MB
-      external 1.53 MB
-      arrayBuffers 0.37 MB
-[36mverbose[39m 2021-05-03T09:59:59.447Z : Query: 
+info: Memory usage after handling query 42/48: 
+      rss 309.39 MB
+      heapTotal 248.22 MB
+      heapUsed 225.6 MB
+      external 1.68 MB
+      arrayBuffers 0.52 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   hasProject {
@@ -7150,7 +7156,7 @@
     url @single @optional
   }
 }
-[36mverbose[39m 2021-05-03T09:59:59.448Z : Context: {
+verbose: Context: {
   "@context": {
     "schema": "http://schema.org/",
     "image": "schema:image",
@@ -7161,13 +7167,13 @@
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:59.448Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#]",
   "https://data.knows.idlab.ugent.be/person/office/projects.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:59.448Z : Starting query 43/48
-[32minfo[39m 2021-05-03T09:59:59.604Z : Ending query 43/48 (duration: 0.156532991 s)
-[36mverbose[39m 2021-05-03T09:59:59.605Z : Query 43/48 result:
+info: Starting query 43/48
+info: Ending query 43/48 (duration: 0.307648305 s)
+verbose: Query 43/48 result:
 {
   "data": [
     {
@@ -7204,13 +7210,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:59.606Z : Memory usage after handling query 43/48: 
-      rss 283.65 MB
-      heapTotal 231.94 MB
-      heapUsed 110.04 MB
-      external 1.54 MB
-      arrayBuffers 0.1 MB
-[36mverbose[39m 2021-05-03T09:59:59.606Z : Query: 
+info: Memory usage after handling query 43/48: 
+      rss 187.87 MB
+      heapTotal 125.5 MB
+      heapUsed 25.34 MB
+      external 1.69 MB
+      arrayBuffers 0.06 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   hasSoftware {
@@ -7223,7 +7229,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:59.606Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "schema": "http://schema.org/",
@@ -7244,13 +7250,13 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T09:59:59.606Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://data.knows.idlab.ugent.be/person/office/software.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:59.607Z : Starting query 44/48
-[32minfo[39m 2021-05-03T09:59:59.881Z : Ending query 44/48 (duration: 0.274682157 s)
-[36mverbose[39m 2021-05-03T09:59:59.882Z : Query 44/48 result:
+info: Starting query 44/48
+info: Ending query 44/48 (duration: 0.311195595 s)
+verbose: Query 44/48 result:
 {
   "data": [
     {
@@ -7323,13 +7329,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T09:59:59.883Z : Memory usage after handling query 44/48: 
-      rss 283.91 MB
-      heapTotal 231.94 MB
-      heapUsed 116.26 MB
-      external 1.54 MB
-      arrayBuffers 0.11 MB
-[36mverbose[39m 2021-05-03T09:59:59.883Z : Query: 
+info: Memory usage after handling query 44/48: 
+      rss 187.87 MB
+      heapTotal 125.5 MB
+      heapUsed 32 MB
+      external 1.51 MB
+      arrayBuffers 0.07 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   hasTutorial {
@@ -7339,7 +7345,7 @@
     url @single
   }
 }
-[36mverbose[39m 2021-05-03T09:59:59.883Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "schema": "http://schema.org/",
@@ -7353,13 +7359,13 @@
     "url": "schema:url"
   }
 }
-[36mverbose[39m 2021-05-03T09:59:59.883Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://data.knows.idlab.ugent.be/person/office/tutorials.ttl"
 ]
-[32minfo[39m 2021-05-03T09:59:59.884Z : Starting query 45/48
-[32minfo[39m 2021-05-03T10:00:00.073Z : Ending query 45/48 (duration: 0.188565719 s)
-[36mverbose[39m 2021-05-03T10:00:00.073Z : Query 45/48 result:
+info: Starting query 45/48
+info: Ending query 45/48 (duration: 0.188120513 s)
+verbose: Query 45/48 result:
 {
   "data": [
     {
@@ -7406,13 +7412,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T10:00:00.074Z : Memory usage after handling query 45/48: 
-      rss 283.91 MB
-      heapTotal 231.94 MB
-      heapUsed 113.94 MB
-      external 1.55 MB
-      arrayBuffers 0.11 MB
-[36mverbose[39m 2021-05-03T10:00:00.075Z : Query: 
+info: Memory usage after handling query 45/48: 
+      rss 187.87 MB
+      heapTotal 125.5 MB
+      heapUsed 30.65 MB
+      external 1.51 MB
+      arrayBuffers 0.08 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   member {
@@ -7429,7 +7435,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T10:00:00.075Z : Context: {
+verbose: Context: {
   "@context": {
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
     "schema": "http://schema.org/",
@@ -7455,7 +7461,7 @@
     }
   }
 }
-[36mverbose[39m 2021-05-03T10:00:00.075Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://ruben.verborgh.org/profile/#me",
   "https://pieterheyvaert.com/#me",
@@ -7467,9 +7473,9 @@
   "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
-[32minfo[39m 2021-05-03T10:00:00.075Z : Starting query 46/48
-[32minfo[39m 2021-05-03T10:00:28.443Z : Ending query 46/48 (duration: 28.367875990 s)
-[36mverbose[39m 2021-05-03T10:00:28.445Z : Query 46/48 result:
+info: Starting query 46/48
+info: Ending query 46/48 (duration: 247.981375322 s)
+verbose: Query 46/48 result:
 {
   "data": [
     {
@@ -8784,13 +8790,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T10:00:28.451Z : Memory usage after handling query 46/48: 
-      rss 1400.67 MB
-      heapTotal 1333.18 MB
-      heapUsed 1228.83 MB
-      external 1.66 MB
-      arrayBuffers 0.13 MB
-[36mverbose[39m 2021-05-03T10:00:28.452Z : Query: 
+info: Memory usage after handling query 46/48: 
+      rss 1394.7 MB
+      heapTotal 1328.93 MB
+      heapUsed 1238.08 MB
+      external 1.53 MB
+      arrayBuffers 0.09 MB
+verbose: Query: 
 {
   id(_:team)
   employee {
@@ -8803,7 +8809,7 @@
     role @single
   }
 }
-[36mverbose[39m 2021-05-03T10:00:28.452Z : Context: {
+verbose: Context: {
   "@context": {
     "foaf": "http://xmlns.com/foaf/0.1/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
@@ -8827,7 +8833,7 @@
     "role": "knows:role"
   }
 }
-[36mverbose[39m 2021-05-03T10:00:28.453Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://data.knows.idlab.ugent.be/person/office/employees.ttl",
   "https://ben.de-meester.org/#me",
@@ -8855,9 +8861,9 @@
   "https://w3id.org/people/brechtvdv/#me",
   "https://www.rubensworks.net/#me"
 ]
-[32minfo[39m 2021-05-03T10:00:28.453Z : Starting query 47/48
-[32minfo[39m 2021-05-03T10:00:52.858Z : Ending query 47/48 (duration: 24.404899639 s)
-[36mverbose[39m 2021-05-03T10:00:52.859Z : Query 47/48 result:
+info: Starting query 47/48
+info: Ending query 47/48 (duration: 25.897256598 s)
+verbose: Query 47/48 result:
 {
   "data": [
     {
@@ -9298,13 +9304,13 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T10:00:52.872Z : Memory usage after handling query 47/48: 
-      rss 1551.13 MB
-      heapTotal 1481.21 MB
-      heapUsed 1459.4 MB
-      external 2.41 MB
-      arrayBuffers 0.98 MB
-[36mverbose[39m 2021-05-03T10:00:52.873Z : Query: 
+info: Memory usage after handling query 47/48: 
+      rss 1542.63 MB
+      heapTotal 1473.71 MB
+      heapUsed 1445.87 MB
+      external 2.35 MB
+      arrayBuffers 0.92 MB
+verbose: Query: 
 {
   id(_:KNOWS)
   contactPoint {
@@ -9318,7 +9324,7 @@
     address @single
   }
 }
-[36mverbose[39m 2021-05-03T10:00:52.873Z : Context: {
+verbose: Context: {
   "@context": {
     "foaf": "http://xmlns.com/foaf/0.1/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
@@ -9343,13 +9349,13 @@
     "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#"
   }
 }
-[36mverbose[39m 2021-05-03T10:00:52.874Z : Sources: [
+verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/#",
   "https://ruben.verborgh.org/profile/#me"
 ]
-[32minfo[39m 2021-05-03T10:00:52.874Z : Starting query 48/48
-[32minfo[39m 2021-05-03T10:00:59.686Z : Ending query 48/48 (duration: 6.811073065 s)
-[36mverbose[39m 2021-05-03T10:00:59.686Z : Query 48/48 result:
+info: Starting query 48/48
+info: Ending query 48/48 (duration: 6.529631445 s)
+verbose: Query 48/48 result:
 {
   "data": [
     {
@@ -9386,10 +9392,10 @@
     }
   ]
 }
-[32minfo[39m 2021-05-03T10:00:59.690Z : Memory usage after handling query 48/48: 
-      rss 1610.92 MB
-      heapTotal 1539.4 MB
-      heapUsed 1513.84 MB
-      external 2.42 MB
-      arrayBuffers 0.99 MB
-[32minfo[39m 2021-05-03T10:00:59.690Z : Ending app (duration: 167.213935401 s)
+info: Memory usage after handling query 48/48: 
+      rss 1604.55 MB
+      heapTotal 1533.9 MB
+      heapUsed 1505.16 MB
+      external 2.34 MB
+      arrayBuffers 0.91 MB
+info: Ending app (duration: 2019.405831252 s)

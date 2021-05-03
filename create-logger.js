@@ -6,35 +6,30 @@ const winston = require('winston');
  */
 function createLogger(level) {
   const myFormat = winston.format.printf(({level, message, timestamp}) => {
-    return `${level} ${timestamp} : ${message}`;
+    // No timestamp (for logfile comparison)
+    // return `${level} ${timestamp} : ${message}`;
+    return `${level}: ${message}`;
   });
 
   const logger = winston.createLogger({
     format: winston.format.combine(
       winston.format.errors({stack: true}),
       winston.format.splat(),
-      winston.format.timestamp(),
-      myFormat
+      winston.format.timestamp()
     ),
     exitOnError: false, // do not exit on handled exceptions
+    transports: [
+      new winston.transports.Console({
+        level,
+        format: winston.format.combine(
+          // no colors (to avoid escape sequences in tee'd file)
+          // winston.format.colorize(),
+          myFormat
+        ),
+        silent: !level
+      })
+    ]
   });
-
-  // Log to the `console` with the colorized simple format.
-  logger.add(new winston.transports.Console({
-    level,
-    format: winston.format.combine(
-      winston.format.colorize(),
-      winston.format.simple(),
-      winston.format.timestamp(),
-      myFormat
-    ),
-    timestamp: true
-  }));
-
-  if (!level) {
-    // Turn off logging
-    logger.transports[0].silent = true;
-  }
 
   return logger;
 }

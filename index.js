@@ -6,30 +6,57 @@ const Client = require("graphql-ld").Client;
 const QueryEngineComunica = require("graphql-ld-comunica").QueryEngineComunica;
 const LoggerPretty = require("@comunica/logger-pretty").LoggerPretty;
 const commander = require("commander");
-const createLogger = require('./create-logger');
+const createLogger = require("./create-logger");
 const knowsQueryData = require("./knows-query-data");
 
 /**
- * Do one Comunica query
- *
- * @param queryDataItem item from array knowsQueryData
- * @param completionIndicator string identifying this query
+ * Log the momentary memory usage
+ * @param title title string
  * @param loggers the loggers
- * @returns {Promise<ExecutionResult<{[p: string]: any}, {[p: string]: any}>>}
  */
-async function doQuery(queryDataItem, completionIndicator, loggers) {
+function logMemoryUsage(title, loggers) {
+  const memoryUsage = process.memoryUsage();
+  let message = `${title}: `;
+  for (let key in memoryUsage) {
+    message = `${message}
+      ${key} ${Math.round(memoryUsage[key] / 1024 / 1024 * 100) / 100} MB`;
+  }
+  loggers.app.info(message);
+}
+
+/**
+ * Gets the query and substitute the parameters (if any) with their values
+ * @param queryDataItem item from array knowsQueryData
+ * @returns {string}
+ */
+function getExpandedQuery(queryDataItem) {
   let query = queryDataItem.query;
   if (queryDataItem.hasOwnProperty("queryParameters")) {
     for (const [param, value] of Object.entries(queryDataItem.queryParameters)) {
       query = query.split(`$${param}`).join(`"${value}"`);
     }
   }
-  const context =  JSON.parse(queryDataItem.context);
+  return query;
+}
 
-  loggers.app.info(`Starting query ${completionIndicator}: ${query}`);
+/**
+ * Let Comunica do one GraphQL-LD query (same calling sequence as in Walder + some logging
+ * @param query GraphQL-LD query
+ * @param context JSON-LD context for the query
+ * @param sources sources to visit
+ * @param sequenceIndicator string indicating the current sequence
+ * @param loggers the loggers
+ * @returns {Promise<void>} the Comunica result
+ */
+async function doComunicaQuery(query, context, sources, sequenceIndicator, loggers) {
+  loggers.app.verbose(`Query: ${query}`);
+  loggers.app.verbose(`Context: ${JSON.stringify(context, null, 2)}`);
+  loggers.app.verbose(`Sources: ${JSON.stringify(sources, null, 2)}`);
+
+  loggers.app.info(`Starting query ${sequenceIndicator}`);
   const t0 = process.hrtime();
   const comunicaConfig = {
-    sources: queryDataItem.sources,
+    sources,
     lenient: true
   };
   if (loggers.hasOwnProperty("comunica")) {
@@ -44,25 +71,33 @@ async function doQuery(queryDataItem, completionIndicator, loggers) {
   }
   catch (e) {
     const dt = process.hrtime(t0);
-    loggers.app.error(`Query ${completionIndicator} failed after ${dt[0]}.${dt[1]} s: ${e}`);
+    loggers.app.error(`Query ${sequenceIndicator} failed after ${dt[0]}.${dt[1]} s: ${e}`);
     throw e;
   }
   const dt = process.hrtime(t0);
-  loggers.app.info(`Ending query ${completionIndicator} (duration: ${dt[0]}.${dt[1]} s)`);
-  loggers.app.verbose(`Query ${completionIndicator} result:
+  loggers.app.info(`Ending query ${sequenceIndicator} (duration: ${dt[0]}.${dt[1]} s)`);
+
+  loggers.app.verbose(`Query ${sequenceIndicator} result:
 ${JSON.stringify(result, null, 2)}`);
+
+  logMemoryUsage(`Memory usage after handling query ${sequenceIndicator}`, loggers);
 
   return result;
 }
 
-function printMemoryUsage(loggers) {
-  const memoryUsage = process.memoryUsage();
-  let message = "Memory usage so far: ";
-  for (let key in memoryUsage) {
-    message = `${message}
-      ${key} ${Math.round(memoryUsage[key] / 1024 / 1024 * 100) / 100} MB`;
-  }
-  loggers.app.info(message);
+/**
+ * Process one query data item
+ * @param queryDataItem item from array knowsQueryData
+ * @param sequenceIndicator string indicating the current sequence
+ * @param loggers the loggers
+ * @returns {Promise<void>}
+ */
+async function processOneQueryDataItem(queryDataItem, sequenceIndicator, loggers) {
+  const query = getExpandedQuery(queryDataItem);
+  const context = JSON.parse(queryDataItem.context);
+  const sources = queryDataItem.sources;
+  const result = await doComunicaQuery(query, context, sources, sequenceIndicator, loggers);
+  return result;
 }
 
 /**
@@ -86,13 +121,12 @@ function printMemoryUsage(loggers) {
     console.log("Running silently - consider logging options...")
   }
 
-  loggers.app.info("Starting app");
+  loggers.app.info("Starting app %d", 1);
+  logMemoryUsage(`Memory usage before handling queries`, loggers);
   const t0 = process.hrtime();
-  printMemoryUsage(loggers);
   try {
     for (i = 0 ; i < knowsQueryData.length ; i++) {
-      await doQuery(knowsQueryData[i], `${i + 1}/${knowsQueryData.length}`, loggers);
-      printMemoryUsage(loggers);
+      await processOneQueryDataItem(knowsQueryData[i], `${i + 1}/${knowsQueryData.length}`, loggers);
     }
   }
   finally {
