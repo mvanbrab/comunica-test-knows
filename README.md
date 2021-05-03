@@ -18,11 +18,9 @@ yarn start
 node ./index.js -h
 
 # saving output on a Linux machine (this was done to save index.log)
-node .index.js --log verbose 2>&1 | tee index.log 
+node ./index.js --log verbose 2>&1 | tee index.log 
 ```
 
-## Current observations (see also index.log)
+## Observations
 
-- Runs without errors, but with big memory usage (up to 1500 MB)
-- Runs slow (over 2000 seconds to fetch all KNoWS data)
-- Takes 4 minutes after final log message ("Ending app...") and node termination
+See [here](OBSERVATIONS.md)
