@@ -1,9 +1,9 @@
 info: Starting app 1
 info: Memory usage before handling queries: 
-      rss 57.17 MB
-      heapTotal 29.26 MB
-      heapUsed 19.69 MB
-      external 2.11 MB
+      rss 57.37 MB
+      heapTotal 29.51 MB
+      heapUsed 19.47 MB
+      external 2.12 MB
       arrayBuffers 0.68 MB
 verbose: Query: 
 {
@@ -73,7 +73,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 1/48
-info: Ending query 1/48 (duration: 4.704848892 s)
+info: Ending query 1/48 (duration: 5.347415140 s)
 verbose: Query 1/48 result:
 {
   "data": [
@@ -112,11 +112,11 @@ verbose: Query 1/48 result:
   ]
 }
 info: Memory usage after handling query 1/48: 
-      rss 169.48 MB
-      heapTotal 129.35 MB
-      heapUsed 111.19 MB
+      rss 173.05 MB
+      heapTotal 132.35 MB
+      heapUsed 105.06 MB
       external 1.79 MB
-      arrayBuffers 0.36 MB
+      arrayBuffers 0.34 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -185,7 +185,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 2/48
-info: Ending query 2/48 (duration: 2.902638229 s)
+info: Ending query 2/48 (duration: 3.219211343 s)
 verbose: Query 2/48 result:
 {
   "data": [
@@ -226,11 +226,11 @@ verbose: Query 2/48 result:
   ]
 }
 info: Memory usage after handling query 2/48: 
-      rss 263.47 MB
-      heapTotal 218.85 MB
-      heapUsed 187.24 MB
-      external 2.23 MB
-      arrayBuffers 0.8 MB
+      rss 264.63 MB
+      heapTotal 218.6 MB
+      heapUsed 197.38 MB
+      external 2.31 MB
+      arrayBuffers 0.86 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -299,7 +299,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 3/48
-info: Ending query 3/48 (duration: 3.45987458 s)
+info: Ending query 3/48 (duration: 3.267690009 s)
 verbose: Query 3/48 result:
 {
   "data": [
@@ -361,11 +361,11 @@ verbose: Query 3/48 result:
   ]
 }
 info: Memory usage after handling query 3/48: 
-      rss 224.81 MB
-      heapTotal 173.7 MB
-      heapUsed 146.1 MB
+      rss 217.98 MB
+      heapTotal 171.7 MB
+      heapUsed 142.05 MB
       external 1.56 MB
-      arrayBuffers 0.13 MB
+      arrayBuffers 0.11 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -434,7 +434,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 4/48
-info: Ending query 4/48 (duration: 2.256732842 s)
+info: Ending query 4/48 (duration: 2.420279253 s)
 verbose: Query 4/48 result:
 {
   "data": [
@@ -489,11 +489,11 @@ verbose: Query 4/48 result:
   ]
 }
 info: Memory usage after handling query 4/48: 
-      rss 304.85 MB
-      heapTotal 254.11 MB
-      heapUsed 234.59 MB
+      rss 303.43 MB
+      heapTotal 257.3 MB
+      heapUsed 235.61 MB
       external 2 MB
-      arrayBuffers 0.57 MB
+      arrayBuffers 0.55 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -562,7 +562,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 5/48
-info: Ending query 5/48 (duration: 232.744297426 s)
+info: Ending query 5/48 (duration: 232.215656049 s)
 verbose: Query 5/48 result:
 {
   "data": [
@@ -625,11 +625,11 @@ verbose: Query 5/48 result:
   ]
 }
 info: Memory usage after handling query 5/48: 
-      rss 218.06 MB
-      heapTotal 167.45 MB
-      heapUsed 145.68 MB
-      external 1.58 MB
-      arrayBuffers 0.15 MB
+      rss 213.53 MB
+      heapTotal 167.95 MB
+      heapUsed 145.29 MB
+      external 1.59 MB
+      arrayBuffers 0.14 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -698,7 +698,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 6/48
-info: Ending query 6/48 (duration: 3.687332228 s)
+info: Ending query 6/48 (duration: 4.274579297 s)
 verbose: Query 6/48 result:
 {
   "data": [
@@ -761,11 +761,11 @@ verbose: Query 6/48 result:
   ]
 }
 info: Memory usage after handling query 6/48: 
-      rss 343.69 MB
-      heapTotal 292.99 MB
-      heapUsed 262.04 MB
-      external 1.95 MB
-      arrayBuffers 0.52 MB
+      rss 339.54 MB
+      heapTotal 293.24 MB
+      heapUsed 268.47 MB
+      external 2.04 MB
+      arrayBuffers 0.59 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -834,7 +834,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 7/48
-info: Ending query 7/48 (duration: 2.928269832 s)
+info: Ending query 7/48 (duration: 3.461106369 s)
 verbose: Query 7/48 result:
 {
   "data": [
@@ -904,11 +904,11 @@ verbose: Query 7/48 result:
   ]
 }
 info: Memory usage after handling query 7/48: 
-      rss 469.71 MB
-      heapTotal 417.99 MB
-      heapUsed 395.08 MB
-      external 2.48 MB
-      arrayBuffers 1.04 MB
+      rss 468.41 MB
+      heapTotal 419.74 MB
+      heapUsed 401.01 MB
+      external 2.54 MB
+      arrayBuffers 1.09 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -977,7 +977,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 8/48
-info: Ending query 8/48 (duration: 2.764611234 s)
+info: Ending query 8/48 (duration: 5.161178221 s)
 verbose: Query 8/48 result:
 {
   "data": [
@@ -1047,11 +1047,11 @@ verbose: Query 8/48 result:
   ]
 }
 info: Memory usage after handling query 8/48: 
-      rss 596.78 MB
-      heapTotal 543.21 MB
-      heapUsed 514.1 MB
-      external 2.72 MB
-      arrayBuffers 1.29 MB
+      rss 292.21 MB
+      heapTotal 236.58 MB
+      heapUsed 144.23 MB
+      external 1.6 MB
+      arrayBuffers 0.16 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -1120,7 +1120,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 9/48
-info: Ending query 9/48 (duration: 3.22481175 s)
+info: Ending query 9/48 (duration: 4.954941603 s)
 verbose: Query 9/48 result:
 {
   "data": [
@@ -1185,11 +1185,11 @@ verbose: Query 9/48 result:
   ]
 }
 info: Memory usage after handling query 9/48: 
-      rss 221.41 MB
-      heapTotal 168.48 MB
-      heapUsed 150.15 MB
-      external 1.64 MB
-      arrayBuffers 0.21 MB
+      rss 351.65 MB
+      heapTotal 297.46 MB
+      heapUsed 276.04 MB
+      external 2.08 MB
+      arrayBuffers 0.63 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -1258,7 +1258,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 10/48
-info: Ending query 10/48 (duration: 232.112509303 s)
+info: Ending query 10/48 (duration: 227.709637415 s)
 verbose: Query 10/48 result:
 {
   "data": [
@@ -1324,9 +1324,9 @@ verbose: Query 10/48 result:
   ]
 }
 info: Memory usage after handling query 10/48: 
-      rss 218.5 MB
-      heapTotal 167.51 MB
-      heapUsed 147.09 MB
+      rss 223.15 MB
+      heapTotal 169.51 MB
+      heapUsed 150.88 MB
       external 1.67 MB
       arrayBuffers 0.23 MB
 verbose: Query: 
@@ -1397,7 +1397,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 11/48
-info: Ending query 11/48 (duration: 3.692326645 s)
+info: Ending query 11/48 (duration: 6.262275690 s)
 verbose: Query 11/48 result:
 {
   "data": [
@@ -1457,11 +1457,11 @@ verbose: Query 11/48 result:
   ]
 }
 info: Memory usage after handling query 11/48: 
-      rss 342.62 MB
-      heapTotal 291.61 MB
-      heapUsed 270.22 MB
-      external 1.95 MB
-      arrayBuffers 0.52 MB
+      rss 348.27 MB
+      heapTotal 294.86 MB
+      heapUsed 266.67 MB
+      external 2.01 MB
+      arrayBuffers 0.56 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -1530,7 +1530,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 12/48
-info: Ending query 12/48 (duration: 2.246069239 s)
+info: Ending query 12/48 (duration: 4.324305815 s)
 verbose: Query 12/48 result:
 {
   "data": [
@@ -1567,11 +1567,11 @@ verbose: Query 12/48 result:
   ]
 }
 info: Memory usage after handling query 12/48: 
-      rss 429.86 MB
-      heapTotal 378.95 MB
-      heapUsed 351.34 MB
-      external 2.39 MB
-      arrayBuffers 0.95 MB
+      rss 434.92 MB
+      heapTotal 380.7 MB
+      heapUsed 349.63 MB
+      external 2.46 MB
+      arrayBuffers 1.02 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -1640,7 +1640,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 13/48
-info: Ending query 13/48 (duration: 2.274519513 s)
+info: Ending query 13/48 (duration: 3.466272669 s)
 verbose: Query 13/48 result:
 {
   "data": [
@@ -1679,11 +1679,11 @@ verbose: Query 13/48 result:
   ]
 }
 info: Memory usage after handling query 13/48: 
-      rss 518.87 MB
-      heapTotal 463.25 MB
-      heapUsed 442.5 MB
-      external 2.83 MB
-      arrayBuffers 1.3 MB
+      rss 528.62 MB
+      heapTotal 469 MB
+      heapUsed 437.02 MB
+      external 2.93 MB
+      arrayBuffers 1.43 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -1752,7 +1752,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 14/48
-info: Ending query 14/48 (duration: 2.379019899 s)
+info: Ending query 14/48 (duration: 2.509566180 s)
 verbose: Query 14/48 result:
 {
   "data": [
@@ -1791,11 +1791,11 @@ verbose: Query 14/48 result:
   ]
 }
 info: Memory usage after handling query 14/48: 
-      rss 262.92 MB
-      heapTotal 206.15 MB
-      heapUsed 106.35 MB
-      external 1.62 MB
-      arrayBuffers 0.13 MB
+      rss 613.82 MB
+      heapTotal 553.8 MB
+      heapUsed 535.15 MB
+      external 3.44 MB
+      arrayBuffers 1.87 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -1864,7 +1864,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 15/48
-info: Ending query 15/48 (duration: 233.131912556 s)
+info: Ending query 15/48 (duration: 227.977875953 s)
 verbose: Query 15/48 result:
 {
   "data": [
@@ -1904,9 +1904,9 @@ verbose: Query 15/48 result:
   ]
 }
 info: Memory usage after handling query 15/48: 
-      rss 182.68 MB
-      heapTotal 129.7 MB
-      heapUsed 108.49 MB
+      rss 185.63 MB
+      heapTotal 131.2 MB
+      heapUsed 110.25 MB
       external 1.56 MB
       arrayBuffers 0.12 MB
 verbose: Query: 
@@ -1977,7 +1977,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 16/48
-info: Ending query 16/48 (duration: 3.707152585 s)
+info: Ending query 16/48 (duration: 5.958528137 s)
 verbose: Query 16/48 result:
 {
   "data": [
@@ -2025,11 +2025,11 @@ verbose: Query 16/48 result:
   ]
 }
 info: Memory usage after handling query 16/48: 
-      rss 228.02 MB
-      heapTotal 174.35 MB
-      heapUsed 144.21 MB
-      external 1.98 MB
-      arrayBuffers 0.54 MB
+      rss 225.39 MB
+      heapTotal 171.2 MB
+      heapUsed 151.6 MB
+      external 1.59 MB
+      arrayBuffers 0.14 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2098,7 +2098,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 17/48
-info: Ending query 17/48 (duration: 4.811306070 s)
+info: Ending query 17/48 (duration: 3.651294903 s)
 verbose: Query 17/48 result:
 {
   "data": [
@@ -2166,11 +2166,11 @@ verbose: Query 17/48 result:
   ]
 }
 info: Memory usage after handling query 17/48: 
-      rss 239.82 MB
-      heapTotal 185.7 MB
-      heapUsed 145.01 MB
-      external 1.65 MB
-      arrayBuffers 0.22 MB
+      rss 351.25 MB
+      heapTotal 296.8 MB
+      heapUsed 266.25 MB
+      external 1.97 MB
+      arrayBuffers 0.52 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2239,7 +2239,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 18/48
-info: Ending query 18/48 (duration: 2.548929351 s)
+info: Ending query 18/48 (duration: 3.529444153 s)
 verbose: Query 18/48 result:
 {
   "data": [
@@ -2303,11 +2303,11 @@ verbose: Query 18/48 result:
   ]
 }
 info: Memory usage after handling query 18/48: 
-      rss 348.61 MB
-      heapTotal 295.08 MB
-      heapUsed 272.28 MB
-      external 2.14 MB
-      arrayBuffers 0.71 MB
+      rss 290.29 MB
+      heapTotal 235.73 MB
+      heapUsed 148.5 MB
+      external 1.68 MB
+      arrayBuffers 0.24 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2376,7 +2376,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 19/48
-info: Ending query 19/48 (duration: 2.435436880 s)
+info: Ending query 19/48 (duration: 2.973345922 s)
 verbose: Query 19/48 result:
 {
   "data": [
@@ -2401,6 +2401,12 @@ verbose: Query 19/48 result:
             "text": "‘Smart devices’, but how are they smart? Well, they use Web services to answer questions you may have about your health such as ‘Is my current heart rate normal?’ or ‘Did I sleep enough last night?’. However, health data is personal data which you may not want to share with everyone. Currently, health applications centralize all your health data to give you advice and allow you to compare your heart rate or sleeping pattern with other users. As a user, you want to compare your heart rate during a workout with your friends but not share this information with anyone else, which is currently impossible.\n\nIn this Master thesis, you will investigate how:\n - data owners can express their data usage consent of their health data.\n - data owners can limit access to their health data depending on their data usage consent.\n"
           },
           "contactPoint": [
+            {
+              "id": "https://ben.de-meester.org/#me",
+              "mbox": "mailto:ben.demeester@ugent.be",
+              "familyName": "De Meester",
+              "givenName": "Ben"
+            },
             {
               "id": "https://natadimou.com/#me",
               "mbox": "mailto:anastasia.dimou@ugent.be",
@@ -2435,11 +2441,11 @@ verbose: Query 19/48 result:
   ]
 }
 info: Memory usage after handling query 19/48: 
-      rss 470.94 MB
-      heapTotal 417.4 MB
-      heapUsed 391.63 MB
-      external 2.39 MB
-      arrayBuffers 0.96 MB
+      rss 353.15 MB
+      heapTotal 299.32 MB
+      heapUsed 269.65 MB
+      external 2.01 MB
+      arrayBuffers 0.56 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2508,7 +2514,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 20/48
-info: Ending query 20/48 (duration: 231.63383179 s)
+info: Ending query 20/48 (duration: 228.654575478 s)
 verbose: Query 20/48 result:
 {
   "data": [
@@ -2575,11 +2581,11 @@ verbose: Query 20/48 result:
   ]
 }
 info: Memory usage after handling query 20/48: 
-      rss 222.88 MB
+      rss 219.07 MB
       heapTotal 169.63 MB
-      heapUsed 140.4 MB
-      external 1.6 MB
-      arrayBuffers 0.17 MB
+      heapUsed 142.53 MB
+      external 1.71 MB
+      arrayBuffers 0.27 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2648,7 +2654,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 21/48
-info: Ending query 21/48 (duration: 3.63744245 s)
+info: Ending query 21/48 (duration: 3.940409494 s)
 verbose: Query 21/48 result:
 {
   "data": [
@@ -2685,11 +2691,11 @@ verbose: Query 21/48 result:
   ]
 }
 info: Memory usage after handling query 21/48: 
-      rss 307.09 MB
-      heapTotal 253.73 MB
-      heapUsed 235.1 MB
-      external 1.96 MB
-      arrayBuffers 0.53 MB
+      rss 306.45 MB
+      heapTotal 255.98 MB
+      heapUsed 231.2 MB
+      external 1.95 MB
+      arrayBuffers 0.51 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2758,7 +2764,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 22/48
-info: Ending query 22/48 (duration: 2.985685282 s)
+info: Ending query 22/48 (duration: 3.188717280 s)
 verbose: Query 22/48 result:
 {
   "data": [
@@ -2795,11 +2801,11 @@ verbose: Query 22/48 result:
   ]
 }
 info: Memory usage after handling query 22/48: 
-      rss 395.86 MB
-      heapTotal 342.57 MB
-      heapUsed 314 MB
-      external 2.27 MB
-      arrayBuffers 0.84 MB
+      rss 391.09 MB
+      heapTotal 341.32 MB
+      heapUsed 318.64 MB
+      external 2.35 MB
+      arrayBuffers 0.91 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2868,7 +2874,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 23/48
-info: Ending query 23/48 (duration: 2.460971804 s)
+info: Ending query 23/48 (duration: 3.580214958 s)
 verbose: Query 23/48 result:
 {
   "data": [
@@ -2906,11 +2912,11 @@ verbose: Query 23/48 result:
   ]
 }
 info: Memory usage after handling query 23/48: 
-      rss 483.53 MB
-      heapTotal 425.31 MB
-      heapUsed 406.15 MB
-      external 2.71 MB
-      arrayBuffers 1.28 MB
+      rss 478.66 MB
+      heapTotal 426.56 MB
+      heapUsed 406.19 MB
+      external 2.81 MB
+      arrayBuffers 1.37 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -2979,7 +2985,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 24/48
-info: Ending query 24/48 (duration: 2.492240214 s)
+info: Ending query 24/48 (duration: 2.922722710 s)
 verbose: Query 24/48 result:
 {
   "data": [
@@ -3017,11 +3023,11 @@ verbose: Query 24/48 result:
   ]
 }
 info: Memory usage after handling query 24/48: 
-      rss 571.66 MB
-      heapTotal 513.16 MB
-      heapUsed 488.22 MB
-      external 3.1 MB
-      arrayBuffers 1.67 MB
+      rss 564.16 MB
+      heapTotal 511.91 MB
+      heapUsed 490.52 MB
+      external 3.21 MB
+      arrayBuffers 1.77 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -3090,7 +3096,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 25/48
-info: Ending query 25/48 (duration: 233.394965004 s)
+info: Ending query 25/48 (duration: 231.269179747 s)
 verbose: Query 25/48 result:
 {
   "data": [
@@ -3154,10 +3160,10 @@ verbose: Query 25/48 result:
   ]
 }
 info: Memory usage after handling query 25/48: 
-      rss 229.79 MB
-      heapTotal 171.83 MB
-      heapUsed 149.86 MB
-      external 2.11 MB
+      rss 225.11 MB
+      heapTotal 173.08 MB
+      heapUsed 144.03 MB
+      external 3.18 MB
       arrayBuffers 0.05 MB
 verbose: Query: 
 {
@@ -3227,7 +3233,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 26/48
-info: Ending query 26/48 (duration: 3.898988912 s)
+info: Ending query 26/48 (duration: 3.417092124 s)
 verbose: Query 26/48 result:
 {
   "data": [
@@ -3270,11 +3276,11 @@ verbose: Query 26/48 result:
   ]
 }
 info: Memory usage after handling query 26/48: 
-      rss 318.09 MB
-      heapTotal 259.88 MB
-      heapUsed 240.38 MB
-      external 2.32 MB
-      arrayBuffers 0.54 MB
+      rss 315.53 MB
+      heapTotal 263.63 MB
+      heapUsed 232.07 MB
+      external 2.29 MB
+      arrayBuffers 0.5 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -3343,7 +3349,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 27/48
-info: Ending query 27/48 (duration: 3.27950551 s)
+info: Ending query 27/48 (duration: 3.11502726 s)
 verbose: Query 27/48 result:
 {
   "data": [
@@ -3407,11 +3413,11 @@ verbose: Query 27/48 result:
   ]
 }
 info: Memory usage after handling query 27/48: 
-      rss 442.35 MB
-      heapTotal 383.98 MB
-      heapUsed 362.56 MB
-      external 2.75 MB
-      arrayBuffers 0.98 MB
+      rss 438.77 MB
+      heapTotal 386.48 MB
+      heapUsed 363.05 MB
+      external 2.8 MB
+      arrayBuffers 1.02 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -3480,7 +3486,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 28/48
-info: Ending query 28/48 (duration: 2.834256474 s)
+info: Ending query 28/48 (duration: 3.36946521 s)
 verbose: Query 28/48 result:
 {
   "data": [
@@ -3549,11 +3555,11 @@ verbose: Query 28/48 result:
   ]
 }
 info: Memory usage after handling query 28/48: 
-      rss 573.27 MB
-      heapTotal 510.83 MB
-      heapUsed 482.14 MB
-      external 3.19 MB
-      arrayBuffers 1.42 MB
+      rss 567.48 MB
+      heapTotal 513.08 MB
+      heapUsed 492.88 MB
+      external 3.12 MB
+      arrayBuffers 1.33 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -3622,7 +3628,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 29/48
-info: Ending query 29/48 (duration: 3.151450717 s)
+info: Ending query 29/48 (duration: 2.955730901 s)
 verbose: Query 29/48 result:
 {
   "data": [
@@ -3687,11 +3693,11 @@ verbose: Query 29/48 result:
   ]
 }
 info: Memory usage after handling query 29/48: 
-      rss 235.98 MB
-      heapTotal 173.36 MB
-      heapUsed 144.82 MB
-      external 2.02 MB
-      arrayBuffers 0.59 MB
+      rss 227.68 MB
+      heapTotal 174.86 MB
+      heapUsed 149.79 MB
+      external 1.89 MB
+      arrayBuffers 0.45 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -3760,7 +3766,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 30/48
-info: Ending query 30/48 (duration: 231.575578778 s)
+info: Ending query 30/48 (duration: 232.399440744 s)
 verbose: Query 30/48 result:
 {
   "data": [
@@ -3789,12 +3795,6 @@ verbose: Query 30/48 result:
             "text": "Internet of Things (IoT) comes with challenges on managing knowledge coming from data streams! For instance, in a smart space set up, multiple sensors provide large volumes of data in frequent intervals about temperature, humidity, air quality etc. However, it is required to understand the context and relationships of the data to build intelligent applications.\n\nYou will work on architectures (e.g., hoodie by Uber [https://eng.uber.com/hoodie/]) and frameworks (e.g., Apache Spark [https://spark.apache.org], NiFi [https://nifi.apache.org/] and Kafka [https://kafka.apache.org/]) for processing data streams and exposing the knowledge they carry. The goal is to orchestrate devices, data, streams, and other resources into a rich and coherent experience able to manage multiple, heterogeneous devices over multiple, heterogeneous networks, and create a single experience that enables scalability and effectiveness. Experiments can run on Antwerp’s City of Things infrastructure, Gent’s Smart Spaces or European Mobility data.\n\nIn this master thesis, you will answer questions like how can we integrate data from heterogeneous streams? how can we increase the performance of their processing? By the end of this master thesis, you will know how to deal with processing and integration of streaming data, and different frameworks for streaming data and distributed processing."
           },
           "contactPoint": [
-            {
-              "id": "https://ben.de-meester.org/#me",
-              "mbox": "mailto:ben.demeester@ugent.be",
-              "familyName": "De Meester",
-              "givenName": "Ben"
-            },
             {
               "id": "https://natadimou.com/#me",
               "mbox": "mailto:anastasia.dimou@ugent.be",
@@ -3829,11 +3829,11 @@ verbose: Query 30/48 result:
   ]
 }
 info: Memory usage after handling query 30/48: 
-      rss 227.38 MB
-      heapTotal 169.93 MB
-      heapUsed 140.11 MB
-      external 1.6 MB
-      arrayBuffers 0.16 MB
+      rss 222.55 MB
+      heapTotal 169.13 MB
+      heapUsed 146.41 MB
+      external 1.77 MB
+      arrayBuffers 0.32 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -3902,7 +3902,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 31/48
-info: Ending query 31/48 (duration: 3.621692202 s)
+info: Ending query 31/48 (duration: 3.628661576 s)
 verbose: Query 31/48 result:
 {
   "data": [
@@ -3962,11 +3962,11 @@ verbose: Query 31/48 result:
   ]
 }
 info: Memory usage after handling query 31/48: 
-      rss 351.06 MB
-      heapTotal 292.53 MB
-      heapUsed 268.45 MB
-      external 1.95 MB
-      arrayBuffers 0.51 MB
+      rss 344.29 MB
+      heapTotal 291.48 MB
+      heapUsed 273.44 MB
+      external 1.94 MB
+      arrayBuffers 0.49 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4035,7 +4035,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 32/48
-info: Ending query 32/48 (duration: 2.768360379 s)
+info: Ending query 32/48 (duration: 3.2032199 s)
 verbose: Query 32/48 result:
 {
   "data": [
@@ -4096,11 +4096,11 @@ verbose: Query 32/48 result:
   ]
 }
 info: Memory usage after handling query 32/48: 
-      rss 474.24 MB
-      heapTotal 415.88 MB
-      heapUsed 390.88 MB
-      external 2.37 MB
-      arrayBuffers 0.94 MB
+      rss 468.51 MB
+      heapTotal 415.33 MB
+      heapUsed 384.6 MB
+      external 2.4 MB
+      arrayBuffers 0.95 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4169,7 +4169,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 33/48
-info: Ending query 33/48 (duration: 2.575222831 s)
+info: Ending query 33/48 (duration: 2.379349123 s)
 verbose: Query 33/48 result:
 {
   "data": [
@@ -4209,11 +4209,11 @@ verbose: Query 33/48 result:
   ]
 }
 info: Memory usage after handling query 33/48: 
-      rss 557.06 MB
-      heapTotal 499.47 MB
-      heapUsed 480.97 MB
-      external 2.65 MB
-      arrayBuffers 1.22 MB
+      rss 559.96 MB
+      heapTotal 503.18 MB
+      heapUsed 472.69 MB
+      external 2.78 MB
+      arrayBuffers 1.34 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4282,7 +4282,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 34/48
-info: Ending query 34/48 (duration: 3.539472309 s)
+info: Ending query 34/48 (duration: 2.986053851 s)
 verbose: Query 34/48 result:
 {
   "data": [
@@ -4344,11 +4344,11 @@ verbose: Query 34/48 result:
   ]
 }
 info: Memory usage after handling query 34/48: 
-      rss 230.52 MB
-      heapTotal 172.11 MB
-      heapUsed 146.3 MB
-      external 1.83 MB
-      arrayBuffers 0.4 MB
+      rss 232.52 MB
+      heapTotal 174.36 MB
+      heapUsed 154.38 MB
+      external 1.9 MB
+      arrayBuffers 0.45 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4417,7 +4417,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 35/48
-info: Ending query 35/48 (duration: 231.921507460 s)
+info: Ending query 35/48 (duration: 232.959021483 s)
 verbose: Query 35/48 result:
 {
   "data": [
@@ -4480,11 +4480,11 @@ verbose: Query 35/48 result:
   ]
 }
 info: Memory usage after handling query 35/48: 
-      rss 224.98 MB
-      heapTotal 169.16 MB
-      heapUsed 146.82 MB
-      external 1.61 MB
-      arrayBuffers 0.18 MB
+      rss 224 MB
+      heapTotal 170.67 MB
+      heapUsed 139.23 MB
+      external 1.54 MB
+      arrayBuffers 0.09 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4553,7 +4553,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 36/48
-info: Ending query 36/48 (duration: 3.503326402 s)
+info: Ending query 36/48 (duration: 4.163172793 s)
 verbose: Query 36/48 result:
 {
   "data": [
@@ -4622,11 +4622,11 @@ verbose: Query 36/48 result:
   ]
 }
 info: Memory usage after handling query 36/48: 
-      rss 353.97 MB
-      heapTotal 295.77 MB
-      heapUsed 269.9 MB
-      external 2.01 MB
-      arrayBuffers 0.58 MB
+      rss 349.92 MB
+      heapTotal 296.02 MB
+      heapUsed 267.45 MB
+      external 2 MB
+      arrayBuffers 0.55 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4695,7 +4695,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 37/48
-info: Ending query 37/48 (duration: 2.943068883 s)
+info: Ending query 37/48 (duration: 3.413301781 s)
 verbose: Query 37/48 result:
 {
   "data": [
@@ -4764,11 +4764,11 @@ verbose: Query 37/48 result:
   ]
 }
 info: Memory usage after handling query 37/48: 
-      rss 478.22 MB
-      heapTotal 420.11 MB
-      heapUsed 399.23 MB
-      external 2.42 MB
-      arrayBuffers 0.99 MB
+      rss 475.27 MB
+      heapTotal 421.11 MB
+      heapUsed 392.98 MB
+      external 2.43 MB
+      arrayBuffers 0.98 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4837,7 +4837,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 38/48
-info: Ending query 38/48 (duration: 2.725902507 s)
+info: Ending query 38/48 (duration: 3.845480159 s)
 verbose: Query 38/48 result:
 {
   "data": [
@@ -4906,11 +4906,11 @@ verbose: Query 38/48 result:
   ]
 }
 info: Memory usage after handling query 38/48: 
-      rss 608.72 MB
-      heapTotal 546.96 MB
-      heapUsed 517.04 MB
-      external 2.71 MB
-      arrayBuffers 1.28 MB
+      rss 275.92 MB
+      heapTotal 220.7 MB
+      heapUsed 151.33 MB
+      external 1.63 MB
+      arrayBuffers 0.18 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -4944,7 +4944,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/projects.ttl"
 ]
 info: Starting query 39/48
-info: Ending query 39/48 (duration: 0.161477360 s)
+info: Ending query 39/48 (duration: 0.183301039 s)
 verbose: Query 39/48 result:
 {
   "data": [
@@ -4983,11 +4983,11 @@ verbose: Query 39/48 result:
   ]
 }
 info: Memory usage after handling query 39/48: 
-      rss 609.96 MB
-      heapTotal 547.96 MB
-      heapUsed 525.46 MB
-      external 2.73 MB
-      arrayBuffers 1.29 MB
+      rss 276.16 MB
+      heapTotal 220.7 MB
+      heapUsed 159.77 MB
+      external 1.64 MB
+      arrayBuffers 0.19 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -5020,7 +5020,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/projects.ttl"
 ]
 info: Starting query 40/48
-info: Ending query 40/48 (duration: 0.71237304 s)
+info: Ending query 40/48 (duration: 0.89166941 s)
 verbose: Query 40/48 result:
 {
   "data": [
@@ -5037,11 +5037,11 @@ verbose: Query 40/48 result:
   ]
 }
 info: Memory usage after handling query 40/48: 
-      rss 609.96 MB
-      heapTotal 547.96 MB
-      heapUsed 528.1 MB
-      external 2.74 MB
-      arrayBuffers 1.3 MB
+      rss 276.16 MB
+      heapTotal 220.7 MB
+      heapUsed 150.64 MB
+      external 1.52 MB
+      arrayBuffers 0.07 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -5084,7 +5084,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/topics.ttl"
 ]
 info: Starting query 41/48
-info: Ending query 41/48 (duration: 1.730282387 s)
+info: Ending query 41/48 (duration: 1.840282688 s)
 verbose: Query 41/48 result:
 {
   "data": [
@@ -5175,11 +5175,11 @@ verbose: Query 41/48 result:
   ]
 }
 info: Memory usage after handling query 41/48: 
-      rss 201.65 MB
-      heapTotal 139.36 MB
-      heapUsed 106.04 MB
-      external 1.64 MB
-      arrayBuffers 0.2 MB
+      rss 312.57 MB
+      heapTotal 258.05 MB
+      heapUsed 237.12 MB
+      external 1.65 MB
+      arrayBuffers 0.21 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -5230,7 +5230,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/publications.ttl"
 ]
 info: Starting query 42/48
-info: Ending query 42/48 (duration: 14.983482320 s)
+info: Ending query 42/48 (duration: 17.818234373 s)
 verbose: Query 42/48 result:
 {
   "data": [
@@ -7140,11 +7140,11 @@ verbose: Query 42/48 result:
   ]
 }
 info: Memory usage after handling query 42/48: 
-      rss 309.39 MB
-      heapTotal 248.22 MB
-      heapUsed 225.6 MB
-      external 1.68 MB
-      arrayBuffers 0.52 MB
+      rss 458.81 MB
+      heapTotal 403.66 MB
+      heapUsed 373.28 MB
+      external 1.73 MB
+      arrayBuffers 0.55 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -7172,7 +7172,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/projects.ttl"
 ]
 info: Starting query 43/48
-info: Ending query 43/48 (duration: 0.307648305 s)
+info: Ending query 43/48 (duration: 0.252509987 s)
 verbose: Query 43/48 result:
 {
   "data": [
@@ -7211,11 +7211,11 @@ verbose: Query 43/48 result:
   ]
 }
 info: Memory usage after handling query 43/48: 
-      rss 187.87 MB
-      heapTotal 125.5 MB
-      heapUsed 25.34 MB
-      external 1.69 MB
-      arrayBuffers 0.06 MB
+      rss 458.81 MB
+      heapTotal 403.66 MB
+      heapUsed 379.81 MB
+      external 1.74 MB
+      arrayBuffers 0.29 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -7255,7 +7255,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/software.ttl"
 ]
 info: Starting query 44/48
-info: Ending query 44/48 (duration: 0.311195595 s)
+info: Ending query 44/48 (duration: 0.360327473 s)
 verbose: Query 44/48 result:
 {
   "data": [
@@ -7330,11 +7330,11 @@ verbose: Query 44/48 result:
   ]
 }
 info: Memory usage after handling query 44/48: 
-      rss 187.87 MB
-      heapTotal 125.5 MB
-      heapUsed 32 MB
-      external 1.51 MB
-      arrayBuffers 0.07 MB
+      rss 460.97 MB
+      heapTotal 405.73 MB
+      heapUsed 376.2 MB
+      external 1.74 MB
+      arrayBuffers 0.29 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -7364,7 +7364,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/tutorials.ttl"
 ]
 info: Starting query 45/48
-info: Ending query 45/48 (duration: 0.188120513 s)
+info: Ending query 45/48 (duration: 0.211755386 s)
 verbose: Query 45/48 result:
 {
   "data": [
@@ -7413,11 +7413,11 @@ verbose: Query 45/48 result:
   ]
 }
 info: Memory usage after handling query 45/48: 
-      rss 187.87 MB
-      heapTotal 125.5 MB
-      heapUsed 30.65 MB
-      external 1.51 MB
-      arrayBuffers 0.08 MB
+      rss 460.97 MB
+      heapTotal 405.73 MB
+      heapUsed 387.51 MB
+      external 1.75 MB
+      arrayBuffers 0.3 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -7474,7 +7474,7 @@ verbose: Sources: [
   "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
 ]
 info: Starting query 46/48
-info: Ending query 46/48 (duration: 247.981375322 s)
+info: Ending query 46/48 (duration: 244.812278909 s)
 verbose: Query 46/48 result:
 {
   "data": [
@@ -8791,9 +8791,9 @@ verbose: Query 46/48 result:
   ]
 }
 info: Memory usage after handling query 46/48: 
-      rss 1394.7 MB
-      heapTotal 1328.93 MB
-      heapUsed 1238.08 MB
+      rss 1397.63 MB
+      heapTotal 1334.17 MB
+      heapUsed 1243.08 MB
       external 1.53 MB
       arrayBuffers 0.09 MB
 verbose: Query: 
@@ -8862,7 +8862,7 @@ verbose: Sources: [
   "https://www.rubensworks.net/#me"
 ]
 info: Starting query 47/48
-info: Ending query 47/48 (duration: 25.897256598 s)
+info: Ending query 47/48 (duration: 26.699381106 s)
 verbose: Query 47/48 result:
 {
   "data": [
@@ -9305,11 +9305,11 @@ verbose: Query 47/48 result:
   ]
 }
 info: Memory usage after handling query 47/48: 
-      rss 1542.63 MB
-      heapTotal 1473.71 MB
-      heapUsed 1445.87 MB
-      external 2.35 MB
-      arrayBuffers 0.92 MB
+      rss 1552.39 MB
+      heapTotal 1482.93 MB
+      heapUsed 1461.77 MB
+      external 2.36 MB
+      arrayBuffers 0.91 MB
 verbose: Query: 
 {
   id(_:KNOWS)
@@ -9354,7 +9354,7 @@ verbose: Sources: [
   "https://ruben.verborgh.org/profile/#me"
 ]
 info: Starting query 48/48
-info: Ending query 48/48 (duration: 6.529631445 s)
+info: Ending query 48/48 (duration: 6.930200897 s)
 verbose: Query 48/48 result:
 {
   "data": [
@@ -9393,9 +9393,9 @@ verbose: Query 48/48 result:
   ]
 }
 info: Memory usage after handling query 48/48: 
-      rss 1604.55 MB
-      heapTotal 1533.9 MB
-      heapUsed 1505.16 MB
-      external 2.34 MB
-      arrayBuffers 0.91 MB
-info: Ending app (duration: 2019.405831252 s)
+      rss 1612.11 MB
+      heapTotal 1541.62 MB
+      heapUsed 1516.86 MB
+      external 2.35 MB
+      arrayBuffers 0.9 MB
+info: Ending app (duration: 2026.973598959 s)

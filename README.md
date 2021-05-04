@@ -18,7 +18,8 @@ yarn start
 node ./index.js -h
 
 # saving output on a Linux machine (this was done to save index.log)
-node ./index.js --log verbose 2>&1 | tee index.log 
+# following the NODE_ENV assignment recommendation found in https://comunica.dev/docs/query/faq/
+NODE_ENV=production node ./index.js --log verbose 2>&1 | tee index.log 
 ```
 
 ## Observations

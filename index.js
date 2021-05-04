@@ -8,6 +8,7 @@ const LoggerPretty = require("@comunica/logger-pretty").LoggerPretty;
 const commander = require("commander");
 const createLogger = require("./create-logger");
 const knowsQueryData = require("./knows-query-data");
+const { writeHeapSnapshot } = require("v8");
 
 /**
  * Log the momentary memory usage
@@ -22,6 +23,17 @@ function logMemoryUsage(title, loggers) {
       ${key} ${Math.round(memoryUsage[key] / 1024 / 1024 * 100) / 100} MB`;
   }
   loggers.app.info(message);
+}
+
+/**
+ * Wrapper around writeHeapSnapshot (logging before and after, 'cause I want to know if it succeeds well
+ * @param filename the filename
+ * @param loggers the loggers
+ */
+function myWriteHeapSnapshot(filename, loggers) {
+  loggers.app.info(`Started writing heap snapshot to file ${filename}`);
+  writeHeapSnapshot(filename);
+  loggers.app.info(`Ended Writing heap snapshot to file ${filename}`);
 }
 
 /**
@@ -123,10 +135,19 @@ async function processOneQueryDataItem(queryDataItem, sequenceIndicator, loggers
 
   loggers.app.info("Starting app %d", 1);
   logMemoryUsage(`Memory usage before handling queries`, loggers);
+  // this one succeeds well
+  // commented out anyway...
+  // myWriteHeapSnapshot(`heap-0.heapsnapshot`, loggers);
   const t0 = process.hrtime();
   try {
-    for (i = 0 ; i < knowsQueryData.length ; i++) {
+    for (let i = 0 ; i < knowsQueryData.length ; i++) {
       await processOneQueryDataItem(knowsQueryData[i], `${i + 1}/${knowsQueryData.length}`, loggers);
+      // this one fails the first time already, with a node exit without error being thrown, exit code is 0
+      // it even fails if the the call to myWriteHeapSnapshot above is commented out
+      // so it has nothing to do with this issue https://github.com/nodejs/node/issues/35559,
+      // that is closed anyway (I observed with recent node v14.16.1)
+      // commented out to avoid node exit...
+      // myWriteHeapSnapshot(`heap-${i + 1}.heapsnapshot`, loggers);
     }
   }
   finally {
