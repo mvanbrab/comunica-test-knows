@@ -2,6 +2,31 @@
 
 Most observations can be verified in index.log commited on corresponding date.
 
+## 2021-05-05
+All previous observations were based on running this app with node v14.16.1.
+Today, repeated with all latest node lts versions vxx.yy.z (xx = 10, 12, 14 and 16).
+Saved each logging output separately in **index-vxx-yy-z.log** files.
+See those log files for detailed differences.
+
+### Overviews
+Next overview diagrams were derived from the log files.
+
+For interpretation, it is interesting to know (see also knows-query-data.js) that:
+- Queries 1-38 ar for routes /education/master-thesis/{year}/{slug} (10 datasources)
+- Query 46 is for route /education/master-theses (10 datasources, same as for queries 1-38)
+- Query 47 is for route /teams (26 datasources)
+
+#### Heap used
+
+![heapUsed](heapUsedDifferentNodeVersions.jpg)
+
+#### Query duration
+![duration](durationDifferentNodeVersions.jpg)
+
+### Conclusions
+- (1) Heap usage differences per node version are very different, but the peak value is comparable (1300 vs 1500 MB roughly). Perhaps only due to different garbage collector behaviour...
+- (2) Execution time differences per node version are neglectible.
+
 ## 2021-05-04
 - (1) Calling v8.writeHeapSnapshot() after first query, results in premature node exit, even without error message. Last lines of (verbose) logging output:
   ```

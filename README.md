@@ -11,9 +11,6 @@ yarn install
 ## Run
 
 ```
-# with yarn
-yarn start
-
 # show options
 node ./index.js -h
 
@@ -21,6 +18,10 @@ node ./index.js -h
 # following the NODE_ENV assignment recommendation found in https://comunica.dev/docs/query/faq/
 NODE_ENV=production node ./index.js --log verbose 2>&1 | tee index.log 
 ```
+
+### Tools
+
+Some Bash shell script(s) help postprocessing log files. See comments inside the .sh files.
 
 ## Observations
 

@@ -1,6 +1,8 @@
 # Changelog
 
 ### Added
+- Loggings for different node versions
+- Bash script to extract heapUsed and duration from log files
 
 ### Changed
 - Structured code / improved logging for better diff'ing
