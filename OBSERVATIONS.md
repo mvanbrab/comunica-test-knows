@@ -3,8 +3,8 @@
 Most observations can be verified in index.log commited on corresponding date.
 
 ## 2020-05-06
-Additional loggings with Comunica logging, on request:
-- index-logc-debug-1.log, index-logc-debug-2.log: two runs (giving different results), run with commandline `NODE_ENV=production node ./index.js --log verbose 2>&1 | tee <logfile>.log`.
+Additional loggings with Comunica logging level debug, on request:
+- index-logc-debug-1.log, index-logc-debug-2.log: two runs (giving different results), run with commandline `NODE_ENV=production node ./index.js --log verbose --logc debug 2>&1 | tee <logfile>.log`.
 - index-logc-debug-3-not-lenient.log: third run with same commandline as above, but code modified to set Comunica's lenient option `false`.
 
 Observations:
