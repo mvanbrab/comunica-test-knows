@@ -2,6 +2,32 @@
 
 Most observations can be verified in index.log commited on corresponding date.
 
+## 2020-05-06
+Additional loggings with Comunica logging, on request:
+- index-logc-debug-1.log, index-logc-debug-2.log: two runs (giving different results), run with commandline `NODE_ENV=production node ./index.js --log verbose 2>&1 | tee <logfile>.log`.
+- index-logc-debug-3-not-lenient.log: third run with same commandline as above, but code modified to set Comunica's lenient option `false`.
+
+Observations:
+- (1) Following differences in output data between first and second run:
+  - in first run, `"id": "https://ben.de-meester.org/#me"` is missing from the output of query 30/48.
+  - in second run, `"id": "https://ben.de-meester.org/#me"` is missing from the output of query 10/48.
+  - in second run, `"id": "https://hvdsomp.info/#i"` is missing from the output of query 47/48.
+- (2) Multiple occurrences of `ERROR: socket hang up` in first and second run, not immediately correlated to the missing output given above.
+- (3) One occurrence of `ERROR: connect ETIMEDOUT 68.65.123.238:443` in second run, during query 47/48.
+- (4) Interesting stacktrace when app ends in third run (Comunica not in lenient mode):
+  ```
+  (node:2896) UnhandledPromiseRejectionWarning: Error: socket hang up
+  at connResetException (internal/errors.js:607:14)
+  at TLSSocket.socketOnEnd (_http_client.js:493:23)
+  at TLSSocket.emit (events.js:327:22)
+  at endReadableNT (internal/streams/readable.js:1327:12)
+  at processTicksAndRejections (internal/process/task_queues.js:80:21)
+  (Use `node --trace-warnings ...` to show where the warning was created)
+  (node:2896) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 33264)
+  (node:2896) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+  ```
+  
+  
 ## 2021-05-05
 All previous observations were based on running this app with node v14.16.1.
 Today, repeated with all latest node lts versions vxx.yy.z (xx = 10, 12, 14 and 16).

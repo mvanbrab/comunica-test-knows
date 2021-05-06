@@ -3,6 +3,8 @@
 ### Added
 - Loggings for different node versions
 - Bash script to extract heapUsed and duration from log files
+- Loggings with Comunica logging set to debug
+- Logging with Comunica lenient option set to false
 
 ### Changed
 - Structured code / improved logging for better diff'ing
