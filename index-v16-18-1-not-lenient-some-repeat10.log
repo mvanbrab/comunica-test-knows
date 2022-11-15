@@ -1,0 +1,512 @@
+info: Starting app with parameters:
+{
+  "lenient": false,
+  "repeat": 10,
+  "query": [
+    6,
+    10,
+    19,
+    29,
+    47
+  ],
+  "log": "verbose"
+}
+info: Memory usage before handling queries: 
+      rss 64.72 MB
+      heapTotal 31.59 MB
+      heapUsed 18.48 MB
+      external 2.19 MB
+      arrayBuffers 0.28 MB
+verbose: Query: 
+{
+  id(_:KNOWS)
+  member {
+    slug (_: "belgian-parliamentary-votes-as-a-knowledge-graph")
+    year (_: "2021")
+    id
+    subject @single {
+      keywords
+      name @single
+      text @single
+    }
+    contactPoint {
+      id @single
+      givenName @single
+      familyName @single
+      mbox @single
+    }
+    numberOfEmployees @single {
+      maxValue @single
+    }
+  }
+}
+verbose: Context: {
+  "@context": {
+    "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "bbc": "http://www.bbc.co.uk/ontologies/coreconcepts/",
+    "dp": "http://dbpedia.org/ontology/",
+    "member": {
+      "@reverse": "schema:memberOf"
+    },
+    "subject": "schema:subject",
+    "keywords": "schema:keywords",
+    "hasPart": "schema:hasPart",
+    "text": "schema:text",
+    "contactPoint": "schema:contactPoint",
+    "mbox": "foaf:mbox",
+    "givenName": {
+      "@id": "foaf:givenName",
+      "@language": "en"
+    },
+    "familyName": {
+      "@id": "foaf:familyName",
+      "@language": "en"
+    },
+    "numberOfEmployees": "schema:numberOfEmployees",
+    "maxValue": "schema:maxValue",
+    "additionalType": "schema:additionalType",
+    "name": "schema:name",
+    "year": "dp:year",
+    "slug": "bbc:slug"
+  }
+}
+verbose: Sources: [
+  "https://data.knows.idlab.ugent.be/person/office/#]",
+  "https://ruben.verborgh.org/profile/#me",
+  "https://pieterheyvaert.com/#me",
+  "https://pietercolpaert.be/#me",
+  "https://www.rubensworks.net/#me",
+  "https://ben.de-meester.org/#me",
+  "https://natadimou.com/#me",
+  "https://data.knows.idlab.ugent.be/person/femkeongenae/#me",
+  "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
+  "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
+]
+info: Starting query 6/48, repetition 0/10
+info: Ending query 6/48, repetition 0/10 (duration: 4.555841685 s)
+verbose: Query 6/48, repetition 0/10 result:
+{
+  "data": [
+    {
+      "member": [
+        {
+          "id": [
+            "https://data.knows.idlab.ugent.be/master-thesis/2021/belgian-parliamentary-votes-as-a-knowledge-graph"
+          ],
+          "subject": {
+            "keywords": [
+              "Linked Data",
+              "Artificial Intelligence",
+              "AI",
+              "Data Science",
+              "Knowledge Graph",
+              "Semantic Web"
+            ],
+            "name": "Belgian parliamentary votes as a knowledge graph",
+            "text": "- Like govtrack.us, but for Belgian “kamer” votes\n  - Other related work: https://progressivepunch.org/ , 538\n- Voting records are available on dekamer.be, but in a plaintext format not available for analysis (example)\n- Disclosing this data in a format ready for analysis would be great value, again, see govtrack.us\n\n- What needs to be done?\n  - The voting data is structured in the form of CSV files embedded in different HTML pages, \n  - There is much room for doing quality checks: did all (and only) 150 volksvertegenwoordigers either vote or abstain?\n  - ontology engineering: making a schema for the voting data in RDF\n- Background knowledge\n  - RDF and RML or willing to learn supe easy check tutorials at https://rml.io/docs/ \n  - Design of data models\n  - HTML and JavaScript to create a website\n  - Machine learning for data analysis \n  - Interest in the Belgian political system! Or the courage to explore it\n\n"
+          },
+          "contactPoint": [
+            {
+              "id": "https://ben.de-meester.org/#me",
+              "mbox": "mailto:ben.demeester@ugent.be",
+              "familyName": "De Meester",
+              "givenName": "Ben"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Αναστασία"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Αναστασία"
+            }
+          ],
+          "numberOfEmployees": {
+            "maxValue": "1"
+          }
+        }
+      ]
+    }
+  ]
+}
+info: Memory usage after handling query 6/48, repetition 0/10: 
+      rss 158.38 MB
+      heapTotal 107.19 MB
+      heapUsed 83.22 MB
+      external 1.49 MB
+      arrayBuffers 0.59 MB
+verbose: Query: 
+{
+  id(_:KNOWS)
+  member {
+    slug (_: "belgian-parliamentary-votes-as-a-knowledge-graph")
+    year (_: "2021")
+    id
+    subject @single {
+      keywords
+      name @single
+      text @single
+    }
+    contactPoint {
+      id @single
+      givenName @single
+      familyName @single
+      mbox @single
+    }
+    numberOfEmployees @single {
+      maxValue @single
+    }
+  }
+}
+verbose: Context: {
+  "@context": {
+    "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "bbc": "http://www.bbc.co.uk/ontologies/coreconcepts/",
+    "dp": "http://dbpedia.org/ontology/",
+    "member": {
+      "@reverse": "schema:memberOf"
+    },
+    "subject": "schema:subject",
+    "keywords": "schema:keywords",
+    "hasPart": "schema:hasPart",
+    "text": "schema:text",
+    "contactPoint": "schema:contactPoint",
+    "mbox": "foaf:mbox",
+    "givenName": {
+      "@id": "foaf:givenName",
+      "@language": "en"
+    },
+    "familyName": {
+      "@id": "foaf:familyName",
+      "@language": "en"
+    },
+    "numberOfEmployees": "schema:numberOfEmployees",
+    "maxValue": "schema:maxValue",
+    "additionalType": "schema:additionalType",
+    "name": "schema:name",
+    "year": "dp:year",
+    "slug": "bbc:slug"
+  }
+}
+verbose: Sources: [
+  "https://data.knows.idlab.ugent.be/person/office/#]",
+  "https://ruben.verborgh.org/profile/#me",
+  "https://pieterheyvaert.com/#me",
+  "https://pietercolpaert.be/#me",
+  "https://www.rubensworks.net/#me",
+  "https://ben.de-meester.org/#me",
+  "https://natadimou.com/#me",
+  "https://data.knows.idlab.ugent.be/person/femkeongenae/#me",
+  "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
+  "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
+]
+info: Starting query 6/48, repetition 1/10
+info: Ending query 6/48, repetition 1/10 (duration: 2.479225153 s)
+verbose: Query 6/48, repetition 1/10 result:
+{
+  "data": [
+    {
+      "member": [
+        {
+          "id": [
+            "https://data.knows.idlab.ugent.be/master-thesis/2021/belgian-parliamentary-votes-as-a-knowledge-graph"
+          ],
+          "subject": {
+            "keywords": [
+              "Linked Data",
+              "Artificial Intelligence",
+              "AI",
+              "Data Science",
+              "Knowledge Graph",
+              "Semantic Web"
+            ],
+            "name": "Belgian parliamentary votes as a knowledge graph",
+            "text": "- Like govtrack.us, but for Belgian “kamer” votes\n  - Other related work: https://progressivepunch.org/ , 538\n- Voting records are available on dekamer.be, but in a plaintext format not available for analysis (example)\n- Disclosing this data in a format ready for analysis would be great value, again, see govtrack.us\n\n- What needs to be done?\n  - The voting data is structured in the form of CSV files embedded in different HTML pages, \n  - There is much room for doing quality checks: did all (and only) 150 volksvertegenwoordigers either vote or abstain?\n  - ontology engineering: making a schema for the voting data in RDF\n- Background knowledge\n  - RDF and RML or willing to learn supe easy check tutorials at https://rml.io/docs/ \n  - Design of data models\n  - HTML and JavaScript to create a website\n  - Machine learning for data analysis \n  - Interest in the Belgian political system! Or the courage to explore it\n\n"
+          },
+          "contactPoint": [
+            {
+              "id": "https://ben.de-meester.org/#me",
+              "mbox": "mailto:ben.demeester@ugent.be",
+              "familyName": "De Meester",
+              "givenName": "Ben"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Αναστασία"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Αναστασία"
+            }
+          ],
+          "numberOfEmployees": {
+            "maxValue": "1"
+          }
+        }
+      ]
+    }
+  ]
+}
+info: Memory usage after handling query 6/48, repetition 1/10: 
+      rss 215.23 MB
+      heapTotal 163.65 MB
+      heapUsed 131.21 MB
+      external 2.01 MB
+      arrayBuffers 1.02 MB
+verbose: Query: 
+{
+  id(_:KNOWS)
+  member {
+    slug (_: "belgian-parliamentary-votes-as-a-knowledge-graph")
+    year (_: "2021")
+    id
+    subject @single {
+      keywords
+      name @single
+      text @single
+    }
+    contactPoint {
+      id @single
+      givenName @single
+      familyName @single
+      mbox @single
+    }
+    numberOfEmployees @single {
+      maxValue @single
+    }
+  }
+}
+verbose: Context: {
+  "@context": {
+    "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "bbc": "http://www.bbc.co.uk/ontologies/coreconcepts/",
+    "dp": "http://dbpedia.org/ontology/",
+    "member": {
+      "@reverse": "schema:memberOf"
+    },
+    "subject": "schema:subject",
+    "keywords": "schema:keywords",
+    "hasPart": "schema:hasPart",
+    "text": "schema:text",
+    "contactPoint": "schema:contactPoint",
+    "mbox": "foaf:mbox",
+    "givenName": {
+      "@id": "foaf:givenName",
+      "@language": "en"
+    },
+    "familyName": {
+      "@id": "foaf:familyName",
+      "@language": "en"
+    },
+    "numberOfEmployees": "schema:numberOfEmployees",
+    "maxValue": "schema:maxValue",
+    "additionalType": "schema:additionalType",
+    "name": "schema:name",
+    "year": "dp:year",
+    "slug": "bbc:slug"
+  }
+}
+verbose: Sources: [
+  "https://data.knows.idlab.ugent.be/person/office/#]",
+  "https://ruben.verborgh.org/profile/#me",
+  "https://pieterheyvaert.com/#me",
+  "https://pietercolpaert.be/#me",
+  "https://www.rubensworks.net/#me",
+  "https://ben.de-meester.org/#me",
+  "https://natadimou.com/#me",
+  "https://data.knows.idlab.ugent.be/person/femkeongenae/#me",
+  "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
+  "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
+]
+info: Starting query 6/48, repetition 2/10
+info: Ending query 6/48, repetition 2/10 (duration: 2.32000072 s)
+verbose: Query 6/48, repetition 2/10 result:
+{
+  "data": [
+    {
+      "member": [
+        {
+          "id": [
+            "https://data.knows.idlab.ugent.be/master-thesis/2021/belgian-parliamentary-votes-as-a-knowledge-graph"
+          ],
+          "subject": {
+            "keywords": [
+              "Linked Data",
+              "Artificial Intelligence",
+              "AI",
+              "Data Science",
+              "Knowledge Graph",
+              "Semantic Web"
+            ],
+            "name": "Belgian parliamentary votes as a knowledge graph",
+            "text": "- Like govtrack.us, but for Belgian “kamer” votes\n  - Other related work: https://progressivepunch.org/ , 538\n- Voting records are available on dekamer.be, but in a plaintext format not available for analysis (example)\n- Disclosing this data in a format ready for analysis would be great value, again, see govtrack.us\n\n- What needs to be done?\n  - The voting data is structured in the form of CSV files embedded in different HTML pages, \n  - There is much room for doing quality checks: did all (and only) 150 volksvertegenwoordigers either vote or abstain?\n  - ontology engineering: making a schema for the voting data in RDF\n- Background knowledge\n  - RDF and RML or willing to learn supe easy check tutorials at https://rml.io/docs/ \n  - Design of data models\n  - HTML and JavaScript to create a website\n  - Machine learning for data analysis \n  - Interest in the Belgian political system! Or the courage to explore it\n\n"
+          },
+          "contactPoint": [
+            {
+              "id": "https://ben.de-meester.org/#me",
+              "mbox": "mailto:ben.demeester@ugent.be",
+              "familyName": "De Meester",
+              "givenName": "Ben"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Dimou",
+              "givenName": "Αναστασία"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Anastasia"
+            },
+            {
+              "id": "https://natadimou.com/#me",
+              "mbox": "mailto:anastasia.dimou@ugent.be",
+              "familyName": "Δήμου",
+              "givenName": "Αναστασία"
+            }
+          ],
+          "numberOfEmployees": {
+            "maxValue": "1"
+          }
+        }
+      ]
+    }
+  ]
+}
+info: Memory usage after handling query 6/48, repetition 2/10: 
+      rss 270.87 MB
+      heapTotal 213.36 MB
+      heapUsed 184.82 MB
+      external 2.55 MB
+      arrayBuffers 1.62 MB
+verbose: Query: 
+{
+  id(_:KNOWS)
+  member {
+    slug (_: "belgian-parliamentary-votes-as-a-knowledge-graph")
+    year (_: "2021")
+    id
+    subject @single {
+      keywords
+      name @single
+      text @single
+    }
+    contactPoint {
+      id @single
+      givenName @single
+      familyName @single
+      mbox @single
+    }
+    numberOfEmployees @single {
+      maxValue @single
+    }
+  }
+}
+verbose: Context: {
+  "@context": {
+    "KNOWS": "https://data.knows.idlab.ugent.be/person/office/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "bbc": "http://www.bbc.co.uk/ontologies/coreconcepts/",
+    "dp": "http://dbpedia.org/ontology/",
+    "member": {
+      "@reverse": "schema:memberOf"
+    },
+    "subject": "schema:subject",
+    "keywords": "schema:keywords",
+    "hasPart": "schema:hasPart",
+    "text": "schema:text",
+    "contactPoint": "schema:contactPoint",
+    "mbox": "foaf:mbox",
+    "givenName": {
+      "@id": "foaf:givenName",
+      "@language": "en"
+    },
+    "familyName": {
+      "@id": "foaf:familyName",
+      "@language": "en"
+    },
+    "numberOfEmployees": "schema:numberOfEmployees",
+    "maxValue": "schema:maxValue",
+    "additionalType": "schema:additionalType",
+    "name": "schema:name",
+    "year": "dp:year",
+    "slug": "bbc:slug"
+  }
+}
+verbose: Sources: [
+  "https://data.knows.idlab.ugent.be/person/office/#]",
+  "https://ruben.verborgh.org/profile/#me",
+  "https://pieterheyvaert.com/#me",
+  "https://pietercolpaert.be/#me",
+  "https://www.rubensworks.net/#me",
+  "https://ben.de-meester.org/#me",
+  "https://natadimou.com/#me",
+  "https://data.knows.idlab.ugent.be/person/femkeongenae/#me",
+  "https://data.knows.idlab.ugent.be/person/sofieverbrugge/#me",
+  "https://data.knows.idlab.ugent.be/person/office/master-theses.ttl"
+]
+info: Starting query 6/48, repetition 3/10
+error: Query 6/48, repetition 3/10 failed after 0.104689817 s: FetchError: request to https://ben.de-meester.org/ failed, reason: socket hang up
+info: Ending app (duration: 9.190971855 s)
+
+/home/mavbraba/git-workingcopies/martin/comunica-test-knows/node_modules/node-fetch/lib/index.js:1491
+			reject(new FetchError(`request to ${request.url} failed, reason: ${err.message}`, 'system', err));
+			       ^
+FetchError: request to https://ben.de-meester.org/ failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/home/mavbraba/git-workingcopies/martin/comunica-test-knows/node_modules/node-fetch/lib/index.js:1491:11)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketOnEnd (node:_http_client:518:9)
+    at TLSSocket.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  type: 'system',
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET'
+}

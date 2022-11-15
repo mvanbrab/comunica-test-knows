@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^7.2.0",
-    "graphql-ld-comunica": "^1.2.1",
+    "graphql-ld-comunica": "^1.2.2",
     "winston": "^3.3.3"
   }
 }

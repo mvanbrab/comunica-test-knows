@@ -8,7 +8,7 @@ const LoggerPretty = require("@comunica/logger-pretty").LoggerPretty;
 const commander = require("commander");
 const createLogger = require("./create-logger");
 const knowsQueryData = require("./knows-query-data");
-const { writeHeapSnapshot } = require("v8");
+const assert = require("assert");
 
 /**
  * Log the momentary memory usage
@@ -23,17 +23,6 @@ function logMemoryUsage(title, loggers) {
       ${key} ${Math.round(memoryUsage[key] / 1024 / 1024 * 100) / 100} MB`;
   }
   loggers.app.info(message);
-}
-
-/**
- * Wrapper around writeHeapSnapshot (logging before and after, 'cause I want to know if it succeeds well
- * @param filename the filename
- * @param loggers the loggers
- */
-function myWriteHeapSnapshot(filename, loggers) {
-  loggers.app.info(`Started writing heap snapshot to file ${filename}`);
-  writeHeapSnapshot(filename);
-  loggers.app.info(`Ended Writing heap snapshot to file ${filename}`);
 }
 
 /**
@@ -53,6 +42,7 @@ function getExpandedQuery(queryDataItem) {
 
 /**
  * Let Comunica do one GraphQL-LD query (same calling sequence as in Walder + some logging
+ * @param lenient Comunica lenient option
  * @param query GraphQL-LD query
  * @param context JSON-LD context for the query
  * @param sources sources to visit
@@ -60,7 +50,7 @@ function getExpandedQuery(queryDataItem) {
  * @param loggers the loggers
  * @returns {Promise<void>} the Comunica result
  */
-async function doComunicaQuery(query, context, sources, sequenceIndicator, loggers) {
+async function doComunicaQuery(lenient, query, context, sources, sequenceIndicator, loggers) {
   loggers.app.verbose(`Query: ${query}`);
   loggers.app.verbose(`Context: ${JSON.stringify(context, null, 2)}`);
   loggers.app.verbose(`Sources: ${JSON.stringify(sources, null, 2)}`);
@@ -69,7 +59,7 @@ async function doComunicaQuery(query, context, sources, sequenceIndicator, logge
   const t0 = process.hrtime();
   const comunicaConfig = {
     sources,
-    lenient: true
+    lenient: lenient
   };
   if (loggers.hasOwnProperty("comunica")) {
     comunicaConfig.log = loggers.comunica;
@@ -79,7 +69,7 @@ async function doComunicaQuery(query, context, sources, sequenceIndicator, logge
   let result = {};
   try {
     result = await client.query({query});
-    queryEngine.comunicaEngine.invalidateHttpCache();
+    await queryEngine.comunicaEngine.invalidateHttpCache();
   }
   catch (e) {
     const dt = process.hrtime(t0);
@@ -99,18 +89,61 @@ ${JSON.stringify(result, null, 2)}`);
 
 /**
  * Process one query data item
+ * @param lenient Comunica lenient option
  * @param queryDataItem item from array knowsQueryData
  * @param sequenceIndicator string indicating the current sequence
  * @param loggers the loggers
  * @returns {Promise<void>}
  */
-async function processOneQueryDataItem(queryDataItem, sequenceIndicator, loggers) {
+async function processOneQueryDataItem(lenient, queryDataItem, sequenceIndicator, loggers) {
   const query = getExpandedQuery(queryDataItem);
   const context = JSON.parse(queryDataItem.context);
   const sources = queryDataItem.sources;
-  const result = await doComunicaQuery(query, context, sources, sequenceIndicator, loggers);
+  const result = await doComunicaQuery(lenient, query, context, sources, sequenceIndicator, loggers);
   return result;
 }
+
+/**
+ * parser for commander
+ * @param value
+ * @param dummyPrevious
+ * @returns {number}
+ */
+function parseCommandlineArgumentPositiveInt(value, dummyPrevious) {
+  const parsedValue = parseInt(value, 10);
+  if (isNaN(parsedValue)) {
+    throw new commander.InvalidOptionArgumentError('Not a number.');
+  }
+  if (parsedValue < 0) {
+    throw new commander.InvalidOptionArgumentError('Less than 0.');
+  }
+  return parsedValue;
+}
+
+/**
+ * parser for commander
+ * @param value
+ * @param previous
+ * @returns {number[]|*}
+ */
+function parseCommandlineArgumentQueryNumbers(value, previous) {
+  const parsedValue = parseInt(value, 10);
+  if (isNaN(parsedValue)) {
+    throw new commander.InvalidOptionArgumentError('Not a number.');
+  }
+  if (parsedValue < 1) {
+    throw new commander.InvalidOptionArgumentError('Less than 1.');
+  }
+  if (parsedValue > knowsQueryData.length) {
+    throw new commander.InvalidOptionArgumentError(`Greater than limit ${knowsQueryData.length}.`);
+  }
+  if (Array.isArray(previous)) {
+    return previous.concat([parsedValue]);
+  } else {
+    return [parsedValue];
+  }
+}
+
 
 /**
  * Start
@@ -118,6 +151,9 @@ async function processOneQueryDataItem(queryDataItem, sequenceIndicator, loggers
 (async function main() {
   const program= new commander.Command();
   program
+    .addOption(new commander.Option("--no-lenient", "Do not set Comunica option lenient to true"))
+    .addOption(new commander.Option("--query <queries...>", "Queries to test (1-based indices in the array of test queries, default: all queries").argParser(parseCommandlineArgumentQueryNumbers))
+    .addOption(new commander.Option("--repeat <nr_repeats>", "Repeat each query this number of times or until the result differs").default(0).argParser(parseCommandlineArgumentPositiveInt))
     .addOption(new commander.Option("--log <level>", "App logging level (if used, recommended: info, verbose)").choices(["error", "warn", "info", "verbose", "debug", "silly"]))
     .addOption(new commander.Option("--logc <level>", "Comunica logging level (if used, recommended: debug").choices(["error", "warn", "info", "verbose", "debug", "trace"]))
     .parse(process.argv);
@@ -133,24 +169,43 @@ async function processOneQueryDataItem(queryDataItem, sequenceIndicator, loggers
     console.log("Running silently - consider logging options...")
   }
 
-  loggers.app.info("Starting app %d", 1);
-  logMemoryUsage(`Memory usage before handling queries`, loggers);
-  // this one succeeds well
-  // commented out anyway...
-  // myWriteHeapSnapshot(`heap-0.heapsnapshot`, loggers);
-  const t0 = process.hrtime();
-  try {
-    for (let i = 0 ; i < knowsQueryData.length ; i++) {
-      await processOneQueryDataItem(knowsQueryData[i], `${i + 1}/${knowsQueryData.length}`, loggers);
-      // this one fails the first time already, with a node exit without error being thrown, exit code is 0
-      // it even fails if the the call to myWriteHeapSnapshot above is commented out
-      // so it has nothing to do with this issue https://github.com/nodejs/node/issues/35559,
-      // that is closed anyway (I observed with recent node v14.16.1)
-      // commented out to avoid node exit...
-      // myWriteHeapSnapshot(`heap-${i + 1}.heapsnapshot`, loggers);
+  let queryIndicesBase1;
+  if (options.query) {
+    queryIndicesBase1 = options.query;
+  } else {
+    queryIndicesBase1 = [];
+    for (let i = 1 ; i < knowsQueryData.length + 1 ; i++) {
+      queryIndicesBase1.push(i);
     }
   }
-  finally {
+
+  loggers.app.info(`Starting app with parameters:\n${JSON.stringify(options, null, 2)}`);
+  logMemoryUsage(`Memory usage before handling queries`, loggers);
+  const t0 = process.hrtime();
+  try {
+    for (let i of queryIndicesBase1) {
+      let refResult, refResultJson;
+      for (let j = 0; j < options.repeat + 1; j++) {
+        const result = await processOneQueryDataItem(options.lenient, knowsQueryData[i - 1], `${i}/${knowsQueryData.length}, repetition ${j}/${options.repeat}`, loggers);
+        if (j == 0) {
+          refResult = result;
+          refResultJson = JSON.stringify(refResult);
+          // HACK: we won't compare results if a blank node is involved (appear if id involved not starting with "http")
+          if (refResultJson.match(/"id":\s*"[^h][^t][^t][^p]/)) {
+            loggers.app.verbose(`Not comparing query ${i} because blank node involved`);
+            break;
+          }
+        } else {
+          try {
+            assert.deepStrictEqual(result, refResult, `Oops:  comparison ${j} failed on query ${i}:\n${JSON.stringify(result)}\nis not equal to\n${refResultJson}`);
+          } catch (e) {
+            loggers.app.error(e.message);
+            break;
+          }
+        }
+      }
+    }
+  } finally {
     const dt = process.hrtime(t0);
     loggers.app.info(`Ending app (duration: ${dt[0]}.${dt[1]} s)`);
   }
