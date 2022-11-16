@@ -2,8 +2,9 @@
  * Executing GraphQL-LD queries as in the KNoWS site, but now outside Walder.
  */
 
-const Client = require("graphql-ld").Client;
-const QueryEngineComunica = require("graphql-ld-comunica").QueryEngineComunica;
+const QueryEngine = require('@comunica/query-sparql').QueryEngine;
+const bindingsStreamToGraphQl = require('@comunica/actor-query-result-serialize-tree').bindingsStreamToGraphQl;
+
 const LoggerPretty = require("@comunica/logger-pretty").LoggerPretty;
 const commander = require("commander");
 const createLogger = require("./create-logger");
@@ -48,7 +49,7 @@ function getExpandedQuery(queryDataItem) {
  * @param sources sources to visit
  * @param sequenceIndicator string indicating the current sequence
  * @param loggers the loggers
- * @returns {Promise<void>} the Comunica result
+ * @returns {Promise<object>} the Comunica result
  */
 async function doComunicaQuery(lenient, query, context, sources, sequenceIndicator, loggers) {
   loggers.app.verbose(`Query: ${query}`);
@@ -59,17 +60,24 @@ async function doComunicaQuery(lenient, query, context, sources, sequenceIndicat
   const t0 = process.hrtime();
   const comunicaConfig = {
     sources,
+    queryFormat: {
+      language: 'graphql',
+      version: '1.0'
+    },
+    "@context": context["@context"],
     lenient: lenient
   };
   if (loggers.hasOwnProperty("comunica")) {
     comunicaConfig.log = loggers.comunica;
   }
-  const queryEngine = new QueryEngineComunica(comunicaConfig);
-  const client = new Client({context, queryEngine});
+  const queryEngine = new QueryEngine();
   let result = {};
   try {
-    result = await client.query({query});
-    await queryEngine.comunicaEngine.invalidateHttpCache();
+    const temp = await queryEngine.query(query, comunicaConfig);
+    const data = await bindingsStreamToGraphQl(await temp.execute(), temp.context, {materializeRdfJsTerms: true});
+    // wrap in an object for compatibility with test on Comunica v1
+    result = {data};
+    await queryEngine.invalidateHttpCache();
   }
   catch (e) {
     const dt = process.hrtime(t0);

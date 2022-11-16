@@ -9,8 +9,8 @@
   "author": "Martin Vanbrabant",
   "license": "MIT",
   "dependencies": {
+    "@comunica/query-sparql": "^2.5.0",
     "commander": "^7.2.0",
-    "graphql-ld-comunica": "^1.2.2",
     "winston": "^3.3.3"
   }
 }

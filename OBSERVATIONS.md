@@ -2,6 +2,22 @@
 
 Most observations can be verified in `index*.log` commited on corresponding date.
 
+## 2022-11-16
+
+### Note
+The code in `index.js` was migrated to use Comunica v2.x This was the outcome of TODO.
+
+The following command lines were executed (all similar to the observations on 2022-11-15, however the repeat parameter was set to 100 here instead of 10).
+```
+NODE_ENV=production node ./index.js              --query 6 10 19 29 47 --repeat 100 --log verbose              2>&1 | tee index-v16-18-1-lenient-some-repeat100.log
+NODE_ENV=production node ./index.js              --query 6 10 19 29 47 --repeat 100 --log verbose --logc debug 2>&1 | tee index-v16-18-1-lenient-some-repeat100-logc-debug.log
+NODE_ENV=production node ./index.js --no-lenient --query 6 10 19 29 47 --repeat 100 --log verbose              2>&1 | tee index-v16-18-1-not-lenient-some-repeat100.log
+NODE_ENV=production node ./index.js --no-lenient --query 6 10 19 29 47 --repeat 100 --log verbose --logc debug 2>&1 | tee index-v16-18-1-not-lenient-some-repeat100-logc-debug.log
+```
+
+### Observations
+The observations are similar to those of 2022-11-15 (using Comunica v1.x), but seem to occur a little less frequent (hence the increase of the repeat parameter).
+
 ## 2022-11-15
 
 ### Note
